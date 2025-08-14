@@ -1,0 +1,88 @@
+2025-08-13 16:58:14 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 16:58:14 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 16:58:14 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 16:58:14 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 16:58:17 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 16:58:17 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 16:58:19 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 16:58:19 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 16:58:54 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 16:58:54 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 16:58:54 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 16:58:54 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 16:58:57 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 16:58:57 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 16:58:59 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 16:58:59 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 17:01:35 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 17:01:35 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 17:01:36 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 17:01:36 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 17:01:38 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 17:01:38 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 17:01:46 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 17:01:46 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 18:06:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:06:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:06:44 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:06:44 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:07:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:07:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:07:42 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:07:42 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:09:14 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:09:14 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:09:14 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:09:14 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:09:21 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 18:09:21 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 18:09:29 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 18:09:29 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 18:09:53 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:09:53 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:09:53 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:09:53 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:09:55 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 18:09:55 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 18:10:09 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 18:10:09 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 18:16:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:16:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:16:37 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:16:37 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:16:39 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 18:16:39 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 18:16:55 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 18:16:55 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 18:22:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:22:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:22:55 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:22:55 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:22:57 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 18:22:57 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 18:23:13 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 18:23:13 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 18:26:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:26:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:26:33 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:26:33 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:26:35 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 18:26:35 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 18:26:59 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 18:26:59 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-13 18:36:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-13 18:36:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-13 18:36:31 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-13 18:36:31 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-13 18:36:33 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-13 18:36:33 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-13 18:38:18 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-13 18:38:18 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-14 11:30:01 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-14 11:30:01 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-14 11:30:01 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-14 11:30:01 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-14 11:30:04 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-14 11:30:04 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-14 11:31:51 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-14 11:31:51 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
