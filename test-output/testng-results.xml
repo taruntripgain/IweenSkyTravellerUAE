@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-14T11:30:00 IST" name="iween Test Suite" finished-at="2025-08-14T11:31:52 IST" duration-ms="111543">
+  <suite started-at="2025-08-16T17:26:32 IST" name="iween Test Suite" finished-at="2025-08-16T17:27:24 IST" duration-ms="51423">
     <groups>
     </groups>
-    <test started-at="2025-08-14T11:30:00 IST" name=" Search Tests" finished-at="2025-08-14T11:31:52 IST" duration-ms="111543">
+    <test started-at="2025-08-16T17:26:32 IST" name=" Search Tests" finished-at="2025-08-16T17:27:24 IST" duration-ms="51423">
       <class name="com.iween.testcase.TCCP_1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-14T11:30:01 IST" name="setup" finished-at="2025-08-14T11:30:04 IST" duration-ms="2396" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-16T17:26:33 IST" name="setup" finished-at="2025-08-16T17:26:45 IST" duration-ms="12142" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,18 +28,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-14T11:30:04 IST" name="myTest" data-provider="excelData" finished-at="2025-08-14T11:31:51 IST" duration-ms="107673" status="PASS">
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-16T17:26:45 IST" name="myTest" data-provider="excelData" finished-at="2025-08-16T17:27:23 IST" duration-ms="37857" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Going To=DEL, AdultsCounts=1, InfantsCount=1, SKIP=, Class=Economy, Depart From=AMD, ChildrenCount=1}]]>
+                <![CDATA[{Going To=HAM, AdultsCounts=1, InfantsCount=1, profileDropDown=Profile, ImagePath=C:\\Users\\LENOVO\\Downloads\\app_logo.png, SKIP=, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-14T11:31:51 IST" name="tearDown" finished-at="2025-08-14T11:31:52 IST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-16T17:27:23 IST" name="tearDown" finished-at="2025-08-16T17:27:24 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

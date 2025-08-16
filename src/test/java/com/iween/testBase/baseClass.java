@@ -83,6 +83,7 @@ public class baseClass {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
+        
         driver.get(p.getProperty("applicationUrl"));
 
         logger.info("Browser launched and navigated to URL: " + p.getProperty("applicationUrl"));

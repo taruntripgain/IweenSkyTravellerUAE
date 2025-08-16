@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name=" Search Tests(failed)">
     <classes>
-      <class name="com.iween.testcase.TCCP_1">
+      <class name="com.iween.testcase.TCCP_4">
         <methods>
-          <include name="myTest"/>
+          <include name="myTest" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.iween.testcase.TCCP_1 -->
+      </class> <!-- com.iween.testcase.TCCP_4 -->
     </classes>
   </test> <!--  Search Tests(failed) -->
 </suite> <!-- Failed suite [iween Test Suite] -->
