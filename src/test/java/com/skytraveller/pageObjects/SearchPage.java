@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -62,6 +63,15 @@ public class SearchPage extends BasePage{
 	
 	@FindBy(xpath ="//*[contains(@class,'fs-12 d-mobile-none nav-item dropdown')]")
 	WebElement profileDropdown;
+	
+	@FindBy(id="prefclass")
+	WebElement classDropdown;
+	
+	@FindBy(xpath = "(//div[@class='react-datepicker__input-container'])[2]")
+	WebElement datePickerInputReturn;
+	
+	@FindBy(xpath = "(//div[@class='react-datepicker__current-month'])[1]")
+	WebElement dateReturn;
 
 //	public void validateLogoInHomePage(ExtentTest test) {
 //	    try {
@@ -294,8 +304,20 @@ public class SearchPage extends BasePage{
 			        Assert.fail();
 			    }
 			}
+			public void selectTravelClass(String travelClass) {
+			    try {
+			        classDropdown.click();
+			        JavascriptExecutor js = (JavascriptExecutor) driver;
+			        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
-			public void searchFightsOnHomePage(String from, String to, String day, String MonthandYear, String adult, String child, String infant) {
+			        Select select = new Select(classDropdown);
+			        select.selectByVisibleText(travelClass);
+			    } catch (Exception e) {
+			        System.out.println("Error in selectTravelClass(): " + e.getMessage());
+			    }
+			}
+
+			public void searchFightsOnHomePage(String from, String to, String day, String MonthandYear, String adult, String child, String infant,String travelClass) {
 			    try {
 			    	Thread.sleep(1000);
 			    	enterFromLocation(from);
@@ -313,6 +335,8 @@ public class SearchPage extends BasePage{
 			        Thread.sleep(1000);
 			        infantCount(infant);
 			        Thread.sleep(1000);
+			        selectTravelClass(travelClass);
+			        Thread.sleep(1000);
 			        doneButton.click();
 			       
 			    } catch (InterruptedException e) {
@@ -325,6 +349,12 @@ public class SearchPage extends BasePage{
 			    }
 			}
 
+			
+			
+			
+			
+			
+			
 			public void clickOnSearch(ExtentTest test) {
 			    try {
 			        WebElement searchBtn = driver.findElement(By.xpath("//button[text()='Search Flights']"));
@@ -333,11 +363,27 @@ public class SearchPage extends BasePage{
 			        searchBtn.click();
 			        System.out.println("✅ Clicked on 'Search Flights' button.");
 			        test.log(Status.PASS, "✅ Clicked on 'Search Flights' button.");
+			        areYouSurePopUp();
 			    } catch (Exception e) {
 			        System.out.println("❌ Failed to click 'Search Flights' button: " + e.getMessage());
 			        test.log(Status.FAIL, "❌ Failed to click 'Search Flights' button: " + e.getMessage());
 			        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Search Click Failure", "SearchButtonClickException");
 			        Assert.fail();
+			    }
+			}
+
+			public void areYouSurePopUp() {
+			    try {
+			        List<WebElement> popups = driver.findElements(By.xpath("//div[@class='fade app-modal help-support-modal modal show']//div[text()='Are You Sure?']/parent::div/parent::div//button[text()='Yes, Continue']"));
+
+			        if (!popups.isEmpty() && popups.get(0).isDisplayed()) {
+			            popups.get(0).click();
+			            System.out.println("✅ 'Are You Sure?' popup found and 'Yes, Continue' clicked.");
+			        } else {
+			            System.out.println("ℹ️ No 'Are You Sure?' popup found.");
+			        }
+			    } catch (Exception e) {
+			        System.out.println("❌ Exception while handling popup: " + e.getMessage());
 			    }
 			}
 
@@ -590,6 +636,67 @@ public class SearchPage extends BasePage{
 
 
 
-
+			public void selectDateReturn(String day, String MonthandYear) throws InterruptedException
+			{
+				String Date;
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				// Method A: Using zoom
+				js.executeScript("document.body.style.zoom='80%'");
+		 
+				datePickerInputReturn.click();
+				 Date = dateReturn.getText();
+				//	String Date=driver.findElement(By.xpath("(//h2[@class='react-datepicker__current-month'])[1]")).getText();
+				if(Date.contentEquals(MonthandYear))
+				{
+					Thread.sleep(4000);
+					driver.findElement(By.xpath("(//div[@class='react-datepicker__month-container'])[1]//div[text()='"+day+"' and @aria-disabled='false']")).click();
+					Thread.sleep(4000);
+				}else {
+					while(!Date.contentEquals(MonthandYear))
+					{
+						Thread.sleep(500);
+						nextMonth.click();
+						if(Date.contentEquals(MonthandYear))
+						{
+							driver.findElement(By.xpath("(//div[@class='react-datepicker__month-container'])[1]//div[text()='"+day+"' and @aria-disabled='false']")).click();
+							break;
+							//MonthYear
+						}
+		 
+					}
+				}
+			}
+			public void searchFightsOnHomePage(String from, String to, String day, String MonthandYear,String dayReturn,String MonthandYearReturn, String adult, String child, String infant,String travelClass) {
+				try {
+					//String dayReturn, String MonthandYearReturn,
+					Thread.sleep(1000);
+					enterFromLocation(from);
+					Thread.sleep(1000);
+					enterToLocation(to);
+					Thread.sleep(1000);
+					selectDate(day, MonthandYear);
+					selectDateReturn(dayReturn, MonthandYearReturn);
+		 
+					Thread.sleep(1000);
+		 
+					clickOnClassPassangerDropdown.click();
+					Thread.sleep(1000);
+					addAdult(adult);
+					Thread.sleep(1000);
+					addChild(child);
+					Thread.sleep(1000);
+					infantCount(infant);
+					Thread.sleep(1000);
+					 selectTravelClass(travelClass);
+					 Thread.sleep(1000);
+					doneButton.click();
+		 
+				} catch (InterruptedException e) {
+					Thread.currentThread().interrupt(); // Best practice to reset the interruption status
+					System.out.println("Interrupted while searching flights on home page: " + e.getMessage());
+				} catch (Exception e) {
+					System.out.println("Error in searchFightsOnHomePage(): " + e.getMessage());
+				}
+			}
 			
 }

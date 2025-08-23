@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="iween Test Suite" parallel="false">
+<suite name="iween Test Suite" thread-count="5" parallel="false">
     <parameter name="os" value="Windows" />
     <parameter name="browser" value="chrome" />
 
@@ -8,11 +8,23 @@
         <listener class-name="com.iween.utilities.ExtentReportManager"/>
     </listeners>
 
-    <test name=" Search Tests">
+
+
+
+    <test name=" onway Tests">
         <classes>
-        <class name="com.iween.testcase.TCCP_1"/>
+        <class name="com.iween.testcase.TCCP_12"/>
         </classes>
     </test>
+    
+    
+    
+    
+    <!--test  name="RoundTrip Test">
+    <classes>
+      <class name="com.iween.testcaseRoundTrip.TCCPR_1"/>
+    </classes>
+  </test-->
 </suite>
 
 

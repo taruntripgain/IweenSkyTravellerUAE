@@ -6,15 +6,15 @@
   <listeners>
     <listener class-name="com.iween.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name=" Search Tests(failed)">
+  <test thread-count="5" name=" onway Tests(failed)">
     <classes>
-      <class name="com.iween.testcase.TCCP_4">
+      <class name="com.iween.testcase.TCCP_12">
         <methods>
           <include name="myTest" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.iween.testcase.TCCP_4 -->
+      </class> <!-- com.iween.testcase.TCCP_12 -->
     </classes>
-  </test> <!--  Search Tests(failed) -->
+  </test> <!--  onway Tests(failed) -->
 </suite> <!-- Failed suite [iween Test Suite] -->

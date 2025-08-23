@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-16T17:26:32 IST" name="iween Test Suite" finished-at="2025-08-16T17:27:24 IST" duration-ms="51423">
+  <suite started-at="2025-08-23T19:35:02 IST" name="iween Test Suite" finished-at="2025-08-23T19:36:42 IST" duration-ms="100659">
     <groups>
     </groups>
-    <test started-at="2025-08-16T17:26:32 IST" name=" Search Tests" finished-at="2025-08-16T17:27:24 IST" duration-ms="51423">
-      <class name="com.iween.testcase.TCCP_1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-16T17:26:33 IST" name="setup" finished-at="2025-08-16T17:26:45 IST" duration-ms="12142" status="PASS">
+    <test started-at="2025-08-23T19:35:02 IST" name=" onway Tests" finished-at="2025-08-23T19:36:42 IST" duration-ms="100659">
+      <class name="com.iween.testcase.TCCP_12">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.iween.testcase.TCCP_12@7d7758be]" started-at="2025-08-23T19:35:02 IST" name="setup" finished-at="2025-08-23T19:35:10 IST" duration-ms="7159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,29 +21,29 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[public void com.iween.testcase.TCCP_1.myTest(java.util.Map) throws java.lang.Exception]]>
+                <![CDATA[public void com.iween.testcase.TCCP_12.myTest(java.util.Map) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-16T17:26:45 IST" name="myTest" data-provider="excelData" finished-at="2025-08-16T17:27:23 IST" duration-ms="37857" status="PASS">
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.iween.testcase.TCCP_12@7d7758be]" started-at="2025-08-23T19:35:10 IST" name="myTest" data-provider="excelData" finished-at="2025-08-23T19:36:42 IST" duration-ms="92152" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Going To=HAM, AdultsCounts=1, InfantsCount=1, profileDropDown=Profile, ImagePath=C:\\Users\\LENOVO\\Downloads\\app_logo.png, SKIP=, Class=Economy, Depart From=BLR, ChildrenCount=1}]]>
+                <![CDATA[{Going To=KBL, AdultsCounts=1, InfantsCount=0, TravelClass=Economy, FlightCardBasedOnIndex=1, SKIP=, Depart From=DXB, ChildrenCount=0}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.testcase.TCCP_1@3214ee6]" started-at="2025-08-16T17:27:23 IST" name="tearDown" finished-at="2025-08-16T17:27:24 IST" duration-ms="331" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.iween.testcase.TCCP_12@7d7758be]" started-at="2025-08-23T19:36:42 IST" name="tearDown" finished-at="2025-08-23T19:36:42 IST" duration-ms="576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.iween.testcase.TCCP_1 -->
-    </test> <!--  Search Tests -->
+      </class> <!-- com.iween.testcase.TCCP_12 -->
+    </test> <!--  onway Tests -->
   </suite> <!-- iween Test Suite -->
 </testng-results>
