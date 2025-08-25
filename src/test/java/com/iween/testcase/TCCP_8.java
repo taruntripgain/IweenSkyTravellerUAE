@@ -57,7 +57,10 @@ public class TCCP_8 extends baseClass {
       		String modifySearchInfantsCount = excelTestData.get("ModifySearchInfantsCount");
       		 String modifyTravelClass = excelTestData.get("ModifyTravelClass");
       		
-    		
+      		test.log(Status.INFO, "Depart From: " + departFrom +",Going To: "+ goingTo+",Selected Class: "+Class);
+	        test.log(Status.INFO, "AdultsCounts: " + adultsCounts + ", ChildrenCount: " + childCount + ", InfantsCount: " + infantsCount);
+      		 
+      		 
     		 //Method To Get Future Date
             Map<String, Iween_FutureDates.DateResult> dateResults = futureDates.furtherDate();
     		Iween_FutureDates.DateResult date4 = dateResults.get("datePlus4");
@@ -160,6 +163,10 @@ public class TCCP_8 extends baseClass {
       		
       		
            Thread.sleep(3000);
+           test.log(Status.INFO, "Modify Search Details");
+           test.log(Status.INFO, "Depart From: " + modifySearchFromLocation +",Going To: "+ modifySearchToLocation+",Selected Class: "+modifyTravelClass);
+	        test.log(Status.INFO, "AdultsCounts: " + modifySearchAdultsCounts + ", ChildrenCount: " + modifySearchChildrenCount + ", InfantsCount: " + modifySearchInfantsCount);
+           
            
       		resultPage.modifySearch(modifySearchFromLocation,modifySearchToLocation,date8.day,modifyfromMonthYear,modifySearchAdultsCounts,modifySearchChildrenCount,modifySearchInfantsCount,modifyTravelClass);
       		Thread.sleep(2000);

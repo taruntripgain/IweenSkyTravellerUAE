@@ -2187,5 +2187,112 @@ Thread.sleep(2000);
 	    return ssrFound;
 	}
 
+	public String getAllFlightDetailsInBookingPage() {
+	    String allText = "";
+
+	    try {
+	        WebElement flightSection = driver.findElement(By.xpath("//section[@class='selected-flight-details']"));
+	        allText = flightSection.getText();
+	        System.out.println("🛫 All Flight Details:\n" + allText);
+	    } catch (NoSuchElementException e) {
+	        System.out.println("❌ Flight details section not found.");
+	    } catch (Exception e) {
+	        System.out.println("❌ Unexpected error while fetching flight details: " + e.getMessage());
+	    }
+
+	    return allText;
+	}
+
+	public void validateFlightDetailsContentMatch(String selectedFlightDetails, String bookingPageDetails, ExtentTest test) {
+	    String[] selectedLines = selectedFlightDetails.trim().split("\\r?\\n");
+	    String[] bookingLines = bookingPageDetails.trim().split("\\r?\\n");
+
+	    boolean hasMismatch = false;
+
+	    StringBuilder logBuilder = new StringBuilder();
+	    logBuilder.append("<table border='1' style='border-collapse: collapse;'>")
+	              .append("<tr><th>Line</th><th>Selected Page</th><th>Booking Page</th><th>Status</th></tr>");
+
+	    int maxLength = Math.max(selectedLines.length, bookingLines.length);
+
+	    for (int i = 0; i < maxLength; i++) {
+	        String selectedLine = (i < selectedLines.length) ? selectedLines[i].trim() : "⛔ Missing in Selected Page";
+	        String bookingLine = (i < bookingLines.length) ? bookingLines[i].trim() : "⛔ Missing in Booking Page";
+
+	        boolean match = selectedLine.equalsIgnoreCase(bookingLine);
+
+	        if (!match) hasMismatch = true;
+
+	        logBuilder.append("<tr>")
+	                  .append("<td>").append(i + 1).append("</td>")
+	                  .append("<td>").append(selectedLine).append("</td>")
+	                  .append("<td>").append(bookingLine).append("</td>")
+	                  .append("<td style='color:").append(match ? "green" : "red").append(";'>")
+	                  .append(match ? "PASS" : "FAIL")
+	                  .append("</td></tr>");
+	    }
+
+	    logBuilder.append("</table>");
+
+	    if (hasMismatch) {
+	        test.log(Status.FAIL, "❌ Flight details mismatch detected:<br>" + logBuilder.toString());
+
+	        // Capture screenshot if needed
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Flight Detail Mismatch", "Mismatch in flight card and detail modal");
+
+	        Assert.fail("Flight details content mismatch. Check ExtentReport for full comparison.");
+	    } else {
+	        test.log(Status.PASS, "✅ All flight details match:<br>" + logBuilder.toString());
+	    }
+	}
+	
+	public void validateFinalPrice(String expectedPrice, ExtentTest test) {
+	    try {
+	        // Locate and get the raw price text from the UI
+	        String rawPrice = driver.findElement(By.xpath("//span[text()='Total Fare']/following-sibling::span/span")).getText().trim();
+
+	        // Clean up the price text (remove non-breaking spaces, multiple spaces)
+	        rawPrice = rawPrice.replaceAll("\u00A0", " ").replaceAll("\\s+", " ").trim();
+
+	        // Extract only the first valid 'AED' price if multiple are present
+	        String actualPrice = rawPrice.replaceAll("(AED\\s[\\d,]+\\.\\d{2}).*", "$1");
+
+	        // Log prices for debugging
+	        System.out.println("Actual: '" + actualPrice + "', Expected: '" + expectedPrice + "'");
+
+	        // Normalize both prices for comparison if needed (optional)
+	        String normalizedActual = normalizePrice(actualPrice);
+	        String normalizedExpected = normalizePrice(expectedPrice);
+
+	        // Perform comparison
+	        if (!normalizedActual.equals(normalizedExpected)) {
+	            // Log failure and attach screenshot
+	            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL,
+	                "Flight Detail Mismatch",
+	                String.format("Expected: %s, but found: %s", expectedPrice, actualPrice));
+
+	            // Fail the test
+	            Assert.fail("Flight details content mismatch. Check ExtentReport for full comparison.");
+	        } else {
+	            // Log success
+	            test.log(Status.PASS, "Total price validated successfully. Value: " + actualPrice);
+	        }
+	    } catch (NoSuchElementException e) {
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL,
+	            "Element Not Found",
+	            "Could not locate the total price element on the page.");
+	        Assert.fail("Failed due to missing element: " + e.getMessage());
+	    } catch (Exception e) {
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL,
+	            "Unexpected Error",
+	            "An unexpected error occurred in price validation.");
+	        Assert.fail("Unexpected error during validation: " + e.getMessage());
+	    }
+	}
+
+	// Helper method to normalize prices by removing all non-digit/decimal characters
+	private String normalizePrice(String price) {
+	    return price.replaceAll("[^\\d.]", ""); // keep only digits and dot
+	}
 
 }

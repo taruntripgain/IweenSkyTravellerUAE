@@ -307,8 +307,8 @@ public class SearchPage extends BasePage{
 			public void selectTravelClass(String travelClass) {
 			    try {
 			        classDropdown.click();
-			        JavascriptExecutor js = (JavascriptExecutor) driver;
-			        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+			     //   JavascriptExecutor js = (JavascriptExecutor) driver;
+			     //   js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
 			        Select select = new Select(classDropdown);
 			        select.selectByVisibleText(travelClass);
@@ -646,7 +646,9 @@ public class SearchPage extends BasePage{
 				datePickerInputReturn.click();
 				 Date = dateReturn.getText();
 				//	String Date=driver.findElement(By.xpath("(//h2[@class='react-datepicker__current-month'])[1]")).getText();
-				if(Date.contentEquals(MonthandYear))
+				System.out.println(Date);
+				System.out.println(MonthandYear);
+				 if(Date.contentEquals(MonthandYear))
 				{
 					Thread.sleep(4000);
 					driver.findElement(By.xpath("(//div[@class='react-datepicker__month-container'])[1]//div[text()='"+day+"' and @aria-disabled='false']")).click();
@@ -698,5 +700,38 @@ public class SearchPage extends BasePage{
 					System.out.println("Error in searchFightsOnHomePage(): " + e.getMessage());
 				}
 			}
-			
+			public void ModifySearch(String from, String to, String day, String MonthandYear,String dayReturn,String MonthandYearReturn, String adult, String child, String infant,String travelClass) {
+				try {
+					//String dayReturn, String MonthandYearReturn,
+					Thread.sleep(1000);
+					enterFromLocation(from);
+					Thread.sleep(1000);
+					enterToLocation(to);
+					Thread.sleep(1000);
+					selectDate(day, MonthandYear);
+					selectDateReturn(dayReturn, MonthandYearReturn);
+		 
+					Thread.sleep(1000);
+		 
+					Thread.sleep(1000);
+			        
+			        clickOnClassPassangerDropdown.click();
+			        Thread.sleep(1000);
+			        addAdult(adult);
+			        Thread.sleep(1000);
+			        addChild(child);
+			        Thread.sleep(1000);
+			        infantCount(infant);
+			        Thread.sleep(2000);
+			        selectTravelClass(travelClass);
+			        Thread.sleep(1000);
+			        doneButton.click();
+		 
+				} catch (InterruptedException e) {
+					Thread.currentThread().interrupt(); // Best practice to reset the interruption status
+					System.out.println("Interrupted while searching flights on home page: " + e.getMessage());
+				} catch (Exception e) {
+					System.out.println("Error in searchFightsOnHomePage(): " + e.getMessage());
+				}
+			}
 }

@@ -99,7 +99,7 @@ public class ResultPage extends BasePage{
 	
 	public void validateResultPage(ExtentTest test) {
 	    try {
-	        List<WebElement> flightCards = driver.findElements(By.xpath("(//div[@class=' d-flex flex-column mb-2 one-way-new-result-card '])[1]"));
+	        List<WebElement> flightCards = driver.findElements(By.xpath("(//*[@class=' d-flex flex-column mb-2 one-way-new-result-card '])[1]"));
 	 
 	        if (!flightCards.isEmpty() && flightCards.get(0).isDisplayed()) {
 	            System.out.println("✅ Flight card is displayed successfully.");
@@ -143,6 +143,7 @@ public class ResultPage extends BasePage{
 	            if (!noFlightMessages.isEmpty() && noFlightMessages.get(0).isDisplayed()) {
 	                System.out.println("⚠️ No flight found for this search.");
 	                test.log(Status.INFO, "⚠️ No flight found for this search.");
+	                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, " No flight found for this search", " No flight found for this search");
 	                Assert.fail();
 	                return false;
 	               
@@ -189,6 +190,7 @@ public class ResultPage extends BasePage{
 	                WebElement bookNowBtn = firstFare.findElement(By.xpath(".//*[text()='Book now']")); // dot (.) to search relative to fare element
 	                bookNowBtn.click();
 	                test.log(Status.PASS, "✅ 'Book now' button clicked for selected flight.");
+	                areYouSurePopUp();
 	            } else {
 	                test.log(Status.FAIL, "❌ No fare options available.");
 	                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "No fares found", "FareOptionsMissing");
@@ -264,6 +266,7 @@ public class ResultPage extends BasePage{
 	    }
 	    }
 	    */
+	/*
 	public String[] userEnteredDetails(ExtentTest test) {
 	    try {
 	        // Get location codes
@@ -276,6 +279,8 @@ public class ResultPage extends BasePage{
 	        String date = driver.findElement(By.xpath("(//*[@class='react-datepicker__input-container']/input)[1]"))
 	                            .getAttribute("value");
 	        String formattedDate = date.replaceFirst(" (\\d{4})$", ", $1"); // e.g. "20 Aug 2025" -> "20 Aug, 2025"
+	        
+	       
 
 	        // Get traveller details
 	        String[] travellerDetails = driver.findElement(By.xpath("//*[@class='travellers-class_text']")).getText().split(",");
@@ -285,6 +290,7 @@ public class ResultPage extends BasePage{
 	        allDetails[0] = onwardLocation;
 	        allDetails[1] = returnLocation;
 	        allDetails[2] = formattedDate;
+	       
 
 	        // Process traveller details, convert only "First Class" to "FIRST" // because in flight card it is displaying like that
 	        for (int i = 0; i < travellerDetails.length; i++) {
@@ -306,6 +312,60 @@ public class ResultPage extends BasePage{
 	        return new String[0];
 	    }
 	}
+	*/
+	public String[] userEnteredDetails(ExtentTest test) {
+	    try {
+	        // Get location codes
+	        String onwardLocation = driver.findElement(By.xpath("(//*[contains(@class,'react-select__single-value')]//span)[1]"))
+	                                     .getText().split(" - ")[1].trim();
+
+	        String returnLocation = driver.findElement(By.xpath("(//*[contains(@class,'react-select__single-value')]//span)[2]"))
+	                                     .getText().split(" - ")[1].trim();
+
+	        // Get and format onward date
+	        String date = driver.findElement(By.xpath("(//*[@class='react-datepicker__input-container']/input)[1]"))
+	                            .getAttribute("value"); // e.g. "20 Aug 2025"
+	        String formattedDate = date.replaceFirst(" (\\d{4})$", ", $1"); // e.g. "20 Aug 2025" -> "20 Aug, 2025"
+
+	        // Get and format return date
+	        String returndate = driver.findElement(By.xpath("(//*[@class='react-datepicker__input-container']/input)[2]"))
+	                                  .getAttribute("value"); // e.g. "27 Aug 2025"
+	        String formattedReturnDate = returndate.replaceFirst(" (\\d{4})$", ", $1"); // -> "27 Aug, 2025"
+
+	        // Get traveller details
+	        String[] travellerDetails = driver.findElement(By.xpath("//*[@class='travellers-class_text']"))
+	                                          .getText().split(",");
+
+	        // Prepare final array (2 locations + 2 dates + traveller details)
+	        String[] allDetails = new String[travellerDetails.length + 4];
+
+	        allDetails[0] = onwardLocation;
+	        allDetails[1] = returnLocation;
+	        allDetails[2] = formattedDate;
+	        allDetails[3] = formattedReturnDate;
+
+	        // Process and add traveller details
+	        for (int i = 0; i < travellerDetails.length; i++) {
+	            String detail = travellerDetails[i].trim();
+
+	            // Convert "First Class" to "FIRST"
+	            if (i == travellerDetails.length - 1 && detail.equalsIgnoreCase("First Class")) {
+	                detail = "FIRST";
+	            }
+
+	            allDetails[i + 4] = detail;
+	        }
+
+	        return allDetails;
+
+	    } catch (Exception e) {
+	        test.log(Status.FAIL, "Error getting user-entered details: " + e.getMessage());
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Traveller Details", "Error during extraction");
+	        Assert.fail(); // Fails the test
+	        return new String[0];
+	    }
+	}
+
 
 	    /*
 	     allDetails = [
@@ -1953,7 +2013,8 @@ public class ResultPage extends BasePage{
 	    }
 	}
 */
-	//it will return multiple fare cards
+	//it will return multiple fare cards and check for all flightcard
+	/*
 	public List<Map<String, String>> checkSupplierAndDuplicateWithReport(WebDriver driver, ExtentTest test, String targetSupplier) throws InterruptedException {
 	    Set<String> suppliersFound = new HashSet<>();
 	    boolean supplierMatched = false;
@@ -2068,6 +2129,254 @@ public class ResultPage extends BasePage{
 		        return "";
 		    }
 		}
+		*/
+	//This will check only 3 resultcard or less
+	/*
+		public List<Map<String, String>> checkSupplierAndDuplicateWithReport(WebDriver driver, ExtentTest test, String targetSupplier) throws InterruptedException {
+		    Set<String> suppliersFound = new HashSet<>();
+		    boolean supplierMatched = false;
+		    List<Map<String, String>> matchingFares = new ArrayList<>();
+
+		    List<WebElement> airlineLabels = driver.findElements(By.xpath("//div[text()='Search By Airlines']/parent::div//label"));
+
+		    for (int i = 0; i < airlineLabels.size(); i++) {
+		        WebElement airline = airlineLabels.get(i);
+		        String airlineName = airline.getText().trim();
+
+		        airline.click();
+		        test.log(Status.INFO, "✅ Selected airline: " + airlineName);
+		        Thread.sleep(3000);
+
+		        List<WebElement> flightCards = driver.findElements(By.xpath("//*[contains(@class,'one-way-new-result-card')]"));
+
+		        // Limit to first 3 flight cards or less if fewer exist
+		        for (int j = 0; j < Math.min(3, flightCards.size()); j++) {
+		            WebElement flightCard = flightCards.get(j);
+
+		            try {
+		                WebElement viewPrice = flightCard.findElement(By.xpath(".//a[text()='View Price']"));
+		                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", viewPrice);
+		                test.log(Status.PASS, "✅ Clicked 'View Price' for flight at index: " + j);
+		                Thread.sleep(4000); // Allow fare cards to load
+
+		                List<WebElement> fareCards = flightCard.findElements(By.xpath("./following-sibling::div[@class='fare-components-list']//div[contains(@class,'fare-component-mobile')]"));
+		                List<String> fareKeys = new ArrayList<>();
+
+		                for (int k = 0; k < fareCards.size(); k++) {
+		                    WebElement fare = fareCards.get(k);
+		                    String supplier = getText(fare, ".//span[text()='Supplier']/following-sibling::span").trim();
+		                    suppliersFound.add(supplier);
+
+		                    if (supplier.isEmpty()) {
+		                        String fareType = getText(fare, ".//span[text()='Fare Type']/following-sibling::span");
+		                        String farePrice = getText(fare, ".//div[contains(@class,'fare-totalfq')]").replace("AED", "").trim();
+		                        String checkin = getText(fare, ".//span[text()='Check In']/following-sibling::span");
+		                        String cabin = getText(fare, ".//span[text()='Cabin']/following-sibling::span");
+		                        String refundable = getText(fare, ".//span[contains(@class,'fare_refundable')]");
+		                        String fareClass = getText(fare, ".//span[text()='Class']/following-sibling::span");
+
+		                        test.log(Status.WARNING, "⚠️ Missing supplier in airline: " + airlineName + ", Flight: " + j + ", Fare: " + k +
+		                                "\nFare Type: " + fareType + ", Price: AED " + farePrice + ", Check-in: " + checkin + ", Cabin: " + cabin +
+		                                ", Refundable: " + refundable + ", Class: " + fareClass);
+		                        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.WARNING, "Missing Supplier", "MissingSupplier_" + j + "_" + k);
+		                        continue;
+		                    }
+
+		                    if (!supplier.equalsIgnoreCase(targetSupplier)) continue;
+
+		                    supplierMatched = true;
+
+		                    String fareType = getText(fare, ".//span[text()='Fare Type']/following-sibling::span");
+		                    String farePrice = getText(fare, ".//div[contains(@class,'fare-totalfq')]").replace("AED", "").trim();
+		                    String checkin = getText(fare, ".//span[text()='Check In']/following-sibling::span");
+		                    String cabin = getText(fare, ".//span[text()='Cabin']/following-sibling::span");
+		                    String refundable = getText(fare, ".//span[contains(@class,'fare_refundable')]");
+		                    String fareClass = getText(fare, ".//span[text()='Class']/following-sibling::span");
+
+		                    String uniqueKey = fareType + "|" + farePrice + "|" + checkin + "|" + cabin + "|" + refundable + "|" + fareClass;
+
+		                    if (fareKeys.contains(uniqueKey)) {
+		                        test.log(Status.FAIL, "⚠️ Duplicate fare card found [Flight: " + j + ", Fare: " + k + "] - Type: " + fareType + ", Price: AED " + farePrice);
+		                        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Duplicate Fare", "DuplicateFare_" + j + "_" + k);
+		                    } else {
+		                        fareKeys.add(uniqueKey);
+		                        test.log(Status.PASS, "✅ Unique fare found [Flight: " + j + ", Fare: " + k + "] - Type: " + fareType + ", Price: AED " + farePrice);
+		                    }
+
+		                    // Store matching fare
+		                    Map<String, String> result = new LinkedHashMap<>();
+		                    result.put("flightIndex", String.valueOf(j));
+		                    result.put("fareIndex", String.valueOf(k));
+		                    result.put("supplier", supplier);
+		                    result.put("fareType", fareType);
+		                    result.put("price", farePrice);
+		                    result.put("checkin", checkin);
+		                    result.put("cabin", cabin);
+		                    result.put("refundable", refundable);
+		                    result.put("fareClass", fareClass);
+		                    matchingFares.add(result);
+		                }
+
+		            } catch (Exception e) {
+		                test.log(Status.FAIL, "❌ Error on flight card index " + j + ": " + e.getMessage());
+		                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Flight Card Error", "ErrorCard_" + j);
+		            }
+		        }
+
+		        if (!supplierMatched) {
+		            test.log(Status.WARNING, "❌ Supplier '" + targetSupplier + "' not found in airline: " + airlineName);
+		            airline.click(); // Unselect current
+		        } else {
+		            break; // Stop checking more airlines once supplier is found
+		        }
+		    }
+
+		    if (!supplierMatched) {
+		        test.log(Status.FAIL, "❌ Supplier '" + targetSupplier + "' NOT available for this route.");
+		        test.log(Status.INFO, "📋 Suppliers found instead: " + String.join(", ", suppliersFound));
+		        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.INFO, "Available Suppliers", "SuppliersList");
+		    }
+
+		    return matchingFares;
+		}
+
+		// Helper to extract text safely
+		private String getText(WebElement parent, String xpath) {
+		    try {
+		        return parent.findElement(By.xpath(xpath)).getText().trim();
+		    } catch (NoSuchElementException e) {
+		        return "";
+		    }
+		}
+		*/
+	public List<Map<String, String>> checkSupplierAndDuplicateWithReport(WebDriver driver, ExtentTest test, String targetSupplier) throws InterruptedException {
+	    Set<String> suppliersFound = new HashSet<>();
+	    boolean supplierMatched = false;
+	    List<Map<String, String>> matchingFares = new ArrayList<>();
+
+	    List<WebElement> airlineLabels = driver.findElements(By.xpath("//div[text()='Search By Airlines']/parent::div//label"));
+
+	    for (int i = 0; i < airlineLabels.size(); i++) {
+	        WebElement airline = airlineLabels.get(i);
+	        String airlineName = airline.getText().trim();
+
+	        airline.click();
+	        test.log(Status.INFO, "✅ Selected airline: " + airlineName);
+	        Thread.sleep(3000);
+
+	        List<WebElement> flightCards = driver.findElements(By.xpath("//*[contains(@class,'one-way-new-result-card')]"));
+
+	        for (int j = 0; j < Math.min(3, flightCards.size()); j++) {
+	            WebElement flightCard = flightCards.get(j);
+
+	            try {
+	                WebElement viewPrice = flightCard.findElement(By.xpath(".//a[text()='View Price']"));
+	                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", viewPrice);
+	                test.log(Status.PASS, "✅ Clicked 'View Price' for flight at index: " + j);
+	                Thread.sleep(4000);
+
+	                List<WebElement> fareCards = flightCard.findElements(By.xpath("./following-sibling::div[@class='fare-components-list']//div[contains(@class,'fare-component-mobile')]"));
+	                List<String> fareKeys = new ArrayList<>();
+
+	                for (int k = 0; k < fareCards.size(); k++) {
+	                    WebElement fare = fareCards.get(k);
+
+	                    // Extract all fields
+	                    String supplier = getText(fare, ".//span[text()='Supplier']/following-sibling::span").trim();
+	                    String fareType = getText(fare, ".//span[text()='Fare Type']/following-sibling::span");
+	                    String farePrice = getText(fare, ".//div[contains(@class,'fare-totalfq')]").replace("AED", "").trim();
+	                    String checkin = getText(fare, ".//span[text()='Check In']/following-sibling::span");
+	                    String cabin = getText(fare, ".//span[text()='Cabin']/following-sibling::span");
+	                    String refundable = getText(fare, ".//span[contains(@class,'fare_refundable')]");
+	                    String fareClass = getText(fare, ".//span[text()='Class']/following-sibling::span");
+
+	                    // Add found supplier to list
+	                    suppliersFound.add(supplier);
+
+	                    // 🛑 Validate missing fields
+	                    List<String> missingFields = new ArrayList<>();
+	                    if (supplier.isEmpty()) missingFields.add("Supplier");
+	                    if (fareType.isEmpty()) missingFields.add("Fare Type");
+	                    if (farePrice.isEmpty()) missingFields.add("Price");
+	                    if (checkin.isEmpty()) missingFields.add("Check In");
+	                    if (cabin.isEmpty()) missingFields.add("Cabin");
+	                   // if (refundable.isEmpty()) missingFields.add("Refundable");
+	                    if (!(refundable.equalsIgnoreCase("Refundable") || refundable.equalsIgnoreCase("Non Refundable"))) {
+	                        missingFields.add("Refundable");
+	                    }
+	                    if (fareClass.isEmpty()) missingFields.add("Class");
+
+	                    if (!missingFields.isEmpty()) {
+	                        String missingDetails = String.join(", ", missingFields);
+	                        test.log(Status.FAIL, "❌ Missing fare details [Flight: " + j + ", Fare: " + k + "] ➤ Missing: " + missingDetails +
+	                                "<br><b>Fare Type:</b> " + fareType + ", <b>Price:</b> AED " + farePrice +
+	                                ", <b>Check-in:</b> " + checkin + ", <b>Cabin:</b> " + cabin +
+	                                ", <b>Refundable:</b> " + refundable + ", <b>Class:</b> " + fareClass);
+	                        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Missing Fare Fields", "MissingFields_" + j + "_" + k);
+	                        continue; // skip this fare
+	                    }
+
+	                    // ✅ Proceed only if it's the target supplier
+	                    if (!supplier.equalsIgnoreCase(targetSupplier)) continue;
+
+	                    supplierMatched = true;
+
+	                    // 🧭 Duplicate check
+	                    String uniqueKey = fareType + "|" + farePrice + "|" + checkin + "|" + cabin + "|" + refundable + "|" + fareClass;
+	                    if (fareKeys.contains(uniqueKey)) {
+	                        test.log(Status.FAIL, "❌ Duplicate fare found [Flight: " + j + ", Fare: " + k + "] ➤ Type: " + fareType + ", Price: AED " + farePrice);
+	                        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Duplicate Fare", "DuplicateFare_" + j + "_" + k);
+	                    } else {
+	                        fareKeys.add(uniqueKey);
+	                        test.log(Status.PASS, "✅ Unique fare found [Flight: " + j + ", Fare: " + k + "] ➤ Type: " + fareType + ", Price: AED " + farePrice);
+	                    }
+
+	                    // ✅ Store valid fare
+	                    Map<String, String> result = new LinkedHashMap<>();
+	                    result.put("flightIndex", String.valueOf(j));
+	                    result.put("fareIndex", String.valueOf(k));
+	                    result.put("supplier", supplier);
+	                    result.put("fareType", fareType);
+	                    result.put("price", farePrice);
+	                    result.put("checkin", checkin);
+	                    result.put("cabin", cabin);
+	                    result.put("refundable", refundable);
+	                    result.put("fareClass", fareClass);
+
+	                    matchingFares.add(result);
+	                }
+
+	            } catch (Exception e) {
+	                test.log(Status.FAIL, "❌ Error processing flight card index " + j + ": " + e.getMessage());
+	                ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Flight Card Error", "FlightCardError_" + j);
+	            }
+	        }
+
+	        if (!supplierMatched) {
+	            test.log(Status.INFO, "⚠️ Supplier '" + targetSupplier + "' not found in airline: " + airlineName);
+	            airline.click(); // Unselect to allow next
+	        } else {
+	            break; // Stop if matching supplier fares found
+	        }
+	    }
+
+	    // ❌ Supplier never found
+	    if (!supplierMatched) {
+	        test.log(Status.FAIL, "❌ Supplier '" + targetSupplier + "' NOT available for this route.");
+	        test.log(Status.INFO, "📋 Suppliers found instead: " + String.join(", ", suppliersFound));
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.INFO, "Available Suppliers", "SuppliersList");
+	    }
+
+	    return matchingFares;
+	}
+	private String getText(WebElement parent, String xpath) {
+	    try {
+	        return parent.findElement(By.xpath(xpath)).getText().trim();
+	    } catch (NoSuchElementException e) {
+	        return "";
+	    }
+	}
+
 //------------
 		
 
@@ -2178,7 +2487,7 @@ public class ResultPage extends BasePage{
 
 		public void clickOnFlightDetails(int index, ExtentTest test)
 		{
-			int cardIndex=index+1;
+			int cardIndex= index+1;
 			System.out.println(cardIndex);
 			 try {
 			       
@@ -2207,7 +2516,174 @@ public class ResultPage extends BasePage{
 			
 		}
 		
-	
+		 public void clickOnFareBookNow(int index, int fareIndex , ExtentTest test ) throws Exception {
+		        try {
+		        	int flightCardIndex=index+1;
+		        	int fareCardIndex=fareIndex+1;
+		        	
+		            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		            // Locate the specific flight card using correct XPath index (1-based)
+		            WebElement flightCard = driver.findElement(By.xpath("(//*[contains(@class,'one-way-new-result-card')])[" + flightCardIndex + "]"));
+
+		            Thread.sleep(2000);
+		            // Find the corresponding fare card within that flight
+		            WebElement farecard = flightCard.findElement(
+		                    By.xpath("(./following-sibling::div[@class='fare-components-list']//div[contains(@class,'fare-component-mobile')])[" + fareCardIndex + "]"));
+
+		            // Wait for the "Book now" button to be clickable
+		            WebElement bookNowButton = wait.until(
+		                    ExpectedConditions.elementToBeClickable(farecard.findElement(By.xpath(".//button[text()='Book now']"))));
+
+		            // Click the button
+		            bookNowButton.click();
+
+		            // Optional: log success
+		            test.log(Status.PASS, "✅ Clicked 'Book now' on flight index " + index + ", fare index " + fareIndex);
+
+		        } catch (NoSuchElementException | TimeoutException e) {
+		            System.out.println("❌ Element not found or not clickable: " + e.getMessage());
+
+		            // Optional: capture screenshot and log failure
+		             ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Click Failed", "Book now button not found or clickable.");
+		             test.log(Status.FAIL, "❌ Failed to click 'Book now': " + e.getMessage());
+		            throw e; // rethrow or handle as needed
+		        } catch (Exception e) {
+		            System.out.println("❌ Unexpected error during clickOnFareBookNow: " + e.getMessage());
+		            throw e;
+		        }
+		    }
+		
+		 public List<String> selectAirline(List<String> airLines, ExtentTest test) throws InterruptedException {
+			    try {
+			        test.log(Status.INFO, "🔍 Requested airlines: " + airLines);
+			        Thread.sleep(3000);
+			 
+			        // Show More
+			        List<WebElement> showMoreButtons = driver.findElements(By.xpath("//div[text()='Search By Airlines']/parent::div//a[text()='Show More']"));
+			        if (!showMoreButtons.isEmpty() && showMoreButtons.get(0).isDisplayed()) {
+			            showMoreButtons.get(0).click();
+			            Thread.sleep(2000);
+			            test.log(Status.INFO, "📂 Clicked on 'Show More' to expand airline list.");
+			        } else {
+			            test.log(Status.INFO, "ℹ️ 'Show More' button not found or not visible.");
+			        }
+			 
+			        List<String> selectedAirlines = new ArrayList<>();
+			 
+			        List<WebElement> listOfAirline = driver.findElements(By.xpath(
+			            "//div[text()='Search By Airlines']/parent::div//label[contains(@class,'app-check-box cursor-pointer')]"
+			        ));
+			 
+			        Map<String, WebElement> airlineMap = new HashMap<>();
+			        for (WebElement label : listOfAirline) {
+			            String labelText = label.getText();
+			            String[] parts = labelText.split("\\(");
+			            String airlineName = parts[0].trim().toLowerCase();
+			            airlineMap.put(airlineName, label);
+			        }
+			 
+			        for (String airline : airLines) {
+			            String airlineLower = airline.toLowerCase();
+			            if (airlineMap.containsKey(airlineLower)) {
+			                WebElement label = airlineMap.get(airlineLower);
+			                WebElement checkbox = label.findElement(By.xpath(".//input[@type='checkbox']"));
+			 
+			                if (!checkbox.isSelected()) {
+			                    label.click();
+			                    test.log(Status.PASS, "✅ Selected airline: " + label.getText().trim());
+			                } else {
+			                    test.log(Status.INFO, "ℹ️ Airline already selected: " + label.getText().trim());
+			                }
+			 
+			                selectedAirlines.add(label.getText().trim());
+			            } else {
+			                test.log(Status.WARNING, "❌ Airline not found on screen: " + airline);
+			            }
+			        }
+			 
+			        // If no requested airline was selected, click the first available one
+			        if (selectedAirlines.isEmpty() && !listOfAirline.isEmpty()) {
+			            WebElement firstAirline = listOfAirline.get(0);
+			            WebElement checkbox = firstAirline.findElement(By.xpath(".//input[@type='checkbox']"));
+			 
+			            if (!checkbox.isSelected()) {
+			                firstAirline.click();
+			            }
+			 
+			            String selected = firstAirline.getText().trim();
+			            selectedAirlines.add(selected);
+			            test.log(Status.WARNING, "⚠️ None of the requested airlines were found. Selected first available airline instead: " + selected);
+			        }
+			 
+			        if (selectedAirlines.isEmpty()) {
+			            test.log(Status.FAIL, "❌ No airlines could be selected.");
+			            Assert.fail("No airlines could be selected.");
+			        }
+			 
+			        return selectedAirlines;
+			 
+			    } catch (Exception e) {
+			        test.log(Status.FAIL, "❌ Exception in selectAirline(): " + e.getMessage());
+			        e.printStackTrace();
+			        Assert.fail("Exception in selectAirline(): " + e.getMessage());
+			        return null;
+			    }
+			}
+		 public void validateAirlineFilter(List<String> selectedAirlines,ExtentTest test) throws InterruptedException {
+			    try {
+			        Thread.sleep(2000);
+			        test.log(Status.INFO, "🧪 Validating selected airlines: " + selectedAirlines);
+		 
+			        List<String> selectedCodes = new ArrayList<>();
+			        for (String airline : selectedAirlines) {
+			            if (airline.contains("(") && airline.contains(")")) {
+			                String code = airline.split("\\(")[1].replace(")", "").trim();
+			                selectedCodes.add(code);
+			            }
+			        }
+		 
+			        if (selectedCodes.isEmpty()) {
+			            test.log(Status.FAIL, "❌ No airline codes extracted for validation.");
+			            Assert.fail("No airline codes extracted.");
+			        }
+		 
+			        boolean allMatch = true;
+			        List<WebElement> airLineElements = driver.findElements(By.xpath("//div[@class='d-flex flex-column flight-name']"));
+			        test.log(Status.INFO, "📦 Number of flights displayed: " + airLineElements.size());
+		 
+			        for (WebElement element : airLineElements) {
+			            String displayedAirline = element.getText().trim(); // e.g., "Air India AI-123"
+			            boolean matchFound = false;
+		 
+			            for (String code : selectedCodes) {
+			                if (displayedAirline.contains(code)) {
+			                    matchFound = true;
+			                    break;
+			                }
+			            }
+		 
+			            if (!matchFound) {
+			                test.log(Status.FAIL, "❌ Airline mismatch: " + displayedAirline);
+			                allMatch = false;
+			            } else {
+			                test.log(Status.PASS, "✅ Airline matched: " + displayedAirline);
+			            }
+			        }
+		 
+			        if (!allMatch) {
+			            test.log(Status.FAIL, "❌ Some flights do not match selected airline(s).");
+			            Assert.fail("Flight list contains unmatched airlines.");
+			        } else {
+			            test.log(Status.PASS, "🎉 All flights match the selected airline(s).");
+			        }
+		 
+			    } catch (Exception e) {
+			        test.log(Status.FAIL, "❌ Exception in validateAirlineFilter(): " + e.getMessage());
+			        e.printStackTrace();
+			        Assert.fail("Exception in validateAirlineFilter(): " + e.getMessage());
+			    }
+			}
 
 }
 

@@ -35,7 +35,7 @@ public class TCCP_2 extends baseClass {
         try {
             // Log the data being used
             System.out.println("Running test with: " + excelTestData);
-        	test.log(Status.INFO, "Checking Logo in webpage");
+        	test.log(Status.INFO, "Checking Footer Pages in webpage");
         	//Get The Data From Excel
         	   String departFrom = excelTestData.get("Depart From");
                String goingTo = excelTestData.get("Going To");

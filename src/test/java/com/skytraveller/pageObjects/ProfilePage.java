@@ -99,6 +99,8 @@ public class ProfilePage  extends BasePage{
 		        
 		        if (profilePage.isDisplayed()) {
 		            test.log(Status.PASS, "Profile page is displayed.");
+		            
+		            
 		        } else {
 		            test.log(Status.FAIL, "Profile page is not displayed.");
 		            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "ProfilePage Failure", "ProfilePageNotVisible");

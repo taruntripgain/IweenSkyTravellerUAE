@@ -59,6 +59,11 @@ public class TCCPR_1 extends baseClass {
     		  String passportExpiryDateForAdult = excelTestData.get("passportExpiryDateForAdult");
     		  String AdultName = excelTestData.get("AdultName");
     		  
+    		  
+    		  test.log(Status.INFO, "Depart From: " + departFrom +",Going To: "+ goingTo+",Selected Class: "+Class);
+  	        test.log(Status.INFO, "AdultsCounts: " + adultsCounts + ", ChildrenCount: " + childCount + ", InfantsCount: " + infantsCount);
+        		 
+    		  
     		  List<String>travellerInfo=Arrays.asList(
     				  AdultName  // adult
     				  

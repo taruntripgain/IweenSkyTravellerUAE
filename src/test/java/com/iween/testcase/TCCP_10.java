@@ -56,6 +56,10 @@ public class TCCP_10 extends baseClass {
     		
     		  int FlightCardBasedOnIndex = Integer.parseInt(excelTestData.get("FlightCardBasedOnIndex"));
     		  
+    		  test.log(Status.INFO, "Depart From: " + departFrom +",Going To: "+ goingTo+",Selected Class: "+Class);
+  	        test.log(Status.INFO, "AdultsCounts: " + adultsCounts + ", ChildrenCount: " + childCount + ", InfantsCount: " + infantsCount);
+        		 
+    		  
     		  String adultDOB = excelTestData.get("adultDOB");
     		  String issueAdultDOB = excelTestData.get("issueAdultDOB");
     		  String passportExpiryDateForAdult = excelTestData.get("passportExpiryDateForAdult");
@@ -191,9 +195,11 @@ public class TCCP_10 extends baseClass {
            
            
            bookingPage.addMobileCode("91");
-           bookingPage.addMobileNumber(mobileNumber);
-           bookingPage.addEmail(email);
+         //  bookingPage.addMobileNumber(mobileNumber);
+        //   bookingPage.addEmail(email);
          
+           bookingPage.addMobileNumber("9393382211");
+           bookingPage.addEmail("tarun@tripgain.com");
            Thread.sleep(3000);
            bookingPage.selectTitle();
            Thread.sleep(2000);
@@ -238,6 +244,7 @@ public class TCCP_10 extends baseClass {
    double TotalBaggageAmount= bookingPage.getTotalBaggagePrice();
    String baggagePrice= bookingPage.validateBaggagePrice(TotalBaggageAmount, test);
    
+   Thread.sleep(3000);
    List<String> specialSSR= bookingPage.clickOnSpecialSSR(test,1);
        
           

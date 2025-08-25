@@ -51,7 +51,9 @@ public class TCCP_7 extends baseClass {
     		 String ImagePath = excelTestData.get("ImagePath");
     		  int FlightCardBasedOnIndex = Integer.parseInt(excelTestData.get("FlightCardBasedOnIndex"));
     		
-    		
+    		  test.log(Status.INFO, "Depart From: " + departFrom +",Going To: "+ goingTo+",Selected Class: "+Class);
+  	        test.log(Status.INFO, "AdultsCounts: " + adultsCounts + ", ChildrenCount: " + childCount + ", InfantsCount: " + infantsCount);
+    		  
     		 //Method To Get Future Date
             Map<String, Iween_FutureDates.DateResult> dateResults = futureDates.furtherDate();
     		Iween_FutureDates.DateResult date4 = dateResults.get("datePlus4");

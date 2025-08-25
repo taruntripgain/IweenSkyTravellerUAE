@@ -63,6 +63,10 @@ public class TCCP_9 extends baseClass {
     		  String passportExpiryDateForChild = excelTestData.get("passportExpiryDateForChild");
     		  String passportExpiryDateForInfant = excelTestData.get("passportExpiryDateForInfant");
     		
+    		  test.log(Status.INFO, "Depart From: " + departFrom +",Going To: "+ goingTo+",Selected Class: "+Class);
+  	        test.log(Status.INFO, "AdultsCounts: " + adultsCounts + ", ChildrenCount: " + childCount + ", InfantsCount: " + infantsCount);
+        		 
+    		  
     		  List<String> dobList = Arrays.asList(
     				  adultDOB,  // adult
     				  childDOB,    // child

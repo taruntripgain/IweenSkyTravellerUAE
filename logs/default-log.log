@@ -5603,3 +5603,1638 @@ java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()
 2025-08-23 19:35:10 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
 2025-08-23 19:36:42 [main] INFO  com.iween.testcase.TCCP_12 - ******** TestCase1: testLogin completed successfully ********
 2025-08-23 19:36:42 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-23 21:53:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 21:53:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 21:53:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 21:53:29 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 21:53:29 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 21:53:29 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 21:53:54 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-23 21:53:54 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-23 21:56:10 [main] INFO  com.iween.testcase.TCCP_12 - ******** TestCase1: testLogin completed successfully ********
+2025-08-23 21:56:10 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-23 22:29:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 22:29:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 22:29:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 22:29:14 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 22:29:14 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 22:29:14 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 22:29:51 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-23 22:29:51 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-23 22:32:33 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-23 22:34:18 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 22:34:18 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 22:34:18 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 22:34:18 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 22:34:18 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 22:34:18 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 22:34:37 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-23 22:34:37 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-23 22:37:23 [main] ERROR com.iween.testcase.TCCP_12 - Test failed due to: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(./following-sibling::div[@class='fare-components-list']//div[contains(@class,'fare-component-mobile')])[0]"}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [819645a3213e4cd892557b29a215fdf6, findChildElement {value=(./following-sibling::div[@class='fare-components-list']//div[contains(@class,'fare-component-mobile')])[0], using=xpath, id=f.B8D6CB2E5EEE83ED35BBCDC4407FFA2F.d.2AD97C68D5FD136A7BEB519AAD94680C.e.320}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61768}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61768/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 819645a3213e4cd892557b29a215fdf6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211) ~[selenium-remote-driver-4.21.0.jar:?]
+	at com.skytraveller.pageObjects.ResultPage.clickOnFareBookNow(ResultPage.java:2220) ~[test-classes/:?]
+	at com.iween.testcase.TCCP_12.myTest(TCCP_12.java:224) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-23 22:37:23 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-23 22:41:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 22:41:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 22:41:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 22:41:36 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 22:41:37 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 22:41:37 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 22:41:52 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-23 22:41:52 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-23 22:44:20 [main] INFO  com.iween.testcase.TCCP_12 - ******** TestCase1: testLogin completed successfully ********
+2025-08-23 22:44:20 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-23 22:49:05 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 22:49:05 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 22:49:05 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 22:49:05 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 22:49:05 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 22:49:05 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 22:51:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 22:51:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 22:51:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 22:51:46 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 22:51:46 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 22:51:46 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 22:52:51 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-23 22:52:51 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-23 22:55:26 [main] INFO  com.iween.testcase.TCCP_12 - ******** TestCase1: testLogin completed successfully ********
+2025-08-23 22:55:26 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-23 23:13:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 23:13:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 23:13:29 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 23:13:30 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 23:13:30 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 23:13:30 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 23:13:42 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-23 23:13:42 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-23 23:32:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-23 23:32:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-23 23:32:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-23 23:32:05 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-23 23:32:05 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-23 23:32:05 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-23 23:32:14 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-23 23:32:14 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-23 23:34:49 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-24 09:46:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 09:46:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 09:46:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 09:46:07 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 09:46:07 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 09:46:07 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 09:46:15 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 09:46:15 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 09:47:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 09:47:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:06:20 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 11:06:20 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 11:06:20 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 11:06:20 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 11:06:20 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:06:20 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:06:27 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:06:27 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:07:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:08:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 11:08:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 11:08:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 11:08:27 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 11:08:27 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:08:27 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:08:34 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:08:34 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:12:00 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 11:12:00 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 11:12:00 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 11:12:00 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 11:12:00 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:12:00 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:12:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:12:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:13:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:13:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:15:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 11:15:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 11:15:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 11:15:43 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 11:15:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:15:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:15:50 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:15:50 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:16:52 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:16:52 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:19:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 11:19:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 11:19:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 11:19:47 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 11:19:48 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:19:48 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:19:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:19:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:20:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:20:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:24:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 11:24:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 11:24:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 11:24:40 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 11:24:40 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 11:24:40 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 11:24:47 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:24:47 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:25:49 [main] INFO  com.iween.testcase.TCCP_5 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:25:49 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 11:25:50 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 11:25:50 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 11:25:55 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:25:55 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:28:01 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 11:28:02 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 11:28:02 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 11:28:08 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:28:08 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:29:09 [main] INFO  com.iween.testcase.TCCP_5 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:29:09 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 11:29:10 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 11:29:10 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 11:29:16 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:29:16 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:30:17 [main] INFO  com.iween.testcase.TCCP_5 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:30:17 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 11:36:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 11:36:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 11:36:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 11:36:50 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 11:36:50 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:36:50 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:36:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:36:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:37:57 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:37:57 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:37:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:37:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:38:02 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:38:02 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:39:02 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 11:39:02 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:39:03 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:39:03 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:39:10 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:39:10 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:41:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 11:41:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 11:41:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 11:41:25 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 11:41:25 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 11:43:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 12:41:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 12:41:53 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 12:41:53 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 12:41:53 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 12:41:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 12:41:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 12:42:00 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 12:42:00 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 12:43:01 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 12:43:01 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 12:43:01 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 12:43:01 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 12:43:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 12:43:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 12:44:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 12:44:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 12:44:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 12:44:36 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 12:44:36 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 12:44:36 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 12:44:42 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 12:44:42 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 12:45:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 12:45:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 12:45:44 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 12:45:44 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 12:45:51 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 12:45:51 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 12:45:59 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 12:45:59 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 12:45:59 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 12:45:59 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 12:45:59 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 12:45:59 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 12:46:06 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 12:46:06 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 12:51:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 12:51:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 12:51:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 12:51:58 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 12:51:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 12:51:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 12:52:04 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 12:52:04 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 12:54:44 [main] ERROR com.iween.testcaseRoundTrip.TCCPR_3 - Test failed due to: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="fs-12 fw-600 mt-1 app-link-secondary">...</a> is not clickable at point (1072, 7). Other element would receive the click: <div class="modal-header">...</div>
+  (Session info: chrome=139.0.7258.139)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35a9bd3182a384827336b3b1b6bc0b71, clickElement {id=f.65439B47892F229CCCCD600ACF934513.d.23C7512F5021AF82C16C394E3B125931.e.429}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62702/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35a9bd3182a384827336b3b1b6bc0b71)] -> xpath: (//a[text()='Flight Details'])[1]]
+Session ID: 35a9bd3182a384827336b3b1b6bc0b71
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.21.0.jar:?]
+	at com.skytraveller.pageObjects.FlightDetailsRoundTrip.getFlightDetailsOnward(FlightDetailsRoundTrip.java:426) ~[test-classes/:?]
+	at com.iween.testcaseRoundTrip.TCCPR_3.myTest(TCCPR_3.java:181) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-24 12:54:44 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 12:59:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 12:59:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 12:59:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 12:59:12 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 12:59:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 12:59:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 12:59:16 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 12:59:16 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 13:04:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 13:04:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 13:04:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 13:04:12 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 13:04:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 13:04:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 13:04:19 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 13:04:19 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 13:07:10 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 13:24:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 13:24:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 13:24:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 13:24:52 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 13:24:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 13:24:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 13:24:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 13:24:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 13:27:48 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 13:42:46 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 13:42:46 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 13:42:46 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 13:42:47 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 13:42:47 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 13:42:47 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 13:42:55 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 13:42:55 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 13:45:45 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 13:51:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 13:51:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 13:51:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 13:51:04 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 13:51:04 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 13:51:04 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 13:51:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 13:51:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 13:54:02 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 14:03:02 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 14:03:02 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 14:03:02 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 14:03:03 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 14:03:03 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 14:03:03 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 14:03:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 14:03:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 14:05:36 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 14:24:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 14:24:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 14:24:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 14:24:13 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 14:24:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 14:24:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 14:24:19 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 14:24:19 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 14:27:10 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 14:36:11 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 14:36:11 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 14:36:11 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 14:36:11 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 14:36:11 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 14:36:11 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 14:36:19 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 14:36:19 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 14:40:25 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 14:40:25 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 14:40:25 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 14:40:26 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 14:40:26 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 14:40:26 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 14:40:28 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 14:40:28 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 14:43:01 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 14:45:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 14:45:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 14:45:45 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 14:45:45 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 14:45:45 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 14:45:45 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 14:45:51 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 14:45:51 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 14:48:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 15:04:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 15:04:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 15:04:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 15:04:19 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 15:04:19 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-24 15:04:19 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-24 15:04:26 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 15:04:26 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-24 15:05:18 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-24 15:07:42 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 15:07:42 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 15:07:42 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 15:07:43 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 15:07:43 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-24 15:07:43 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-24 15:07:49 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 15:07:49 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-24 15:09:00 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-24 15:15:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 15:15:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 15:15:22 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 15:15:23 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 15:15:23 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-24 15:15:23 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-24 15:15:30 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 15:15:30 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-24 15:16:25 [main] INFO  com.iween.testcase.TCCP_12 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 15:16:25 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-24 17:07:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 17:07:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 17:07:58 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 17:07:58 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 17:07:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 17:07:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 17:08:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 17:08:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 17:12:52 [main] ERROR com.iween.testcaseRoundTrip.TCCPR_3 - Test failed due to: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'selected-flight-details__trip-details')])[1]//span[1]"}
+  (Session info: chrome=139.0.7258.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e963c5e8917dd6f589ae1b6c3b0e681, findElement {value=(//div[contains(@class,'selected-flight-details__trip-details')])[1]//span[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59162/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e963c5e8917dd6f589ae1b6c3b0e681
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at com.skytraveller.pageObjects.FlightDetailsRoundTrip.getFlightDetailsOnward(FlightDetailsRoundTrip.java:429) ~[test-classes/:?]
+	at com.iween.testcaseRoundTrip.TCCPR_3.myTest(TCCPR_3.java:181) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-24 17:12:52 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 17:15:14 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 17:15:14 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 17:15:14 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 17:15:15 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 17:15:15 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 17:15:15 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 17:15:26 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 17:15:26 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 17:18:20 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 17:19:31 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 17:19:31 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 17:19:31 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 17:19:31 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 17:19:31 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 17:19:31 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 17:19:42 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 17:19:42 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 17:22:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 17:28:39 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 17:28:39 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 17:28:39 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 17:28:39 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 17:28:39 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 17:28:39 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 17:28:49 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 17:28:49 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 17:32:59 [main] ERROR com.iween.testcaseRoundTrip.TCCPR_3 - Test failed due to: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'one-way-new-result-card')])[1]"}
+  (Session info: chrome=139.0.7258.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb5b80313b4a8df7e67f0e4882a95383, findElement {using=xpath, value=(//div[contains(@class,'one-way-new-result-card')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59724}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59724/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb5b80313b4a8df7e67f0e4882a95383
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.21.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.21.0.jar:?]
+	at com.skytraveller.pageObjects.ResultPage.clickOnFareBookNow(ResultPage.java:2277) ~[test-classes/:?]
+	at com.iween.testcaseRoundTrip.TCCPR_3.myTest(TCCPR_3.java:219) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-24 17:32:59 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 17:33:56 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 17:33:56 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 17:33:56 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 17:33:56 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 17:33:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 17:33:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 17:34:05 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 17:34:05 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 17:38:03 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 17:46:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 17:46:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 17:46:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 17:46:52 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 17:46:52 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 17:46:52 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 17:46:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 17:46:58 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 17:57:49 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 18:01:24 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:01:24 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:01:24 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:01:24 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:01:54 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:01:54 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:01:54 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:01:54 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:01:54 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 18:01:54 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 18:02:05 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:02:05 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 18:06:05 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 18:08:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:08:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:08:52 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:08:52 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:08:52 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 18:08:52 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 18:09:04 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:09:04 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 18:13:02 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 18:16:10 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:16:10 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:16:10 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:16:11 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:16:11 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 18:16:11 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 18:16:20 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:16:20 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 18:20:18 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 18:20:18 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 18:37:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:37:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:37:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:37:50 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:39:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:39:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:39:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:39:09 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:39:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 18:39:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 18:39:21 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:39:21 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 18:40:34 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:40:34 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:40:34 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:40:34 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:40:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:40:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:40:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:40:44 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:40:44 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 18:40:44 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 18:40:57 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:40:57 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 18:44:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:44:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:44:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:44:37 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:44:37 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 18:44:37 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 18:44:48 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:44:48 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 18:51:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:51:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:51:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:51:08 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:51:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 18:51:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 18:51:21 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:51:21 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 18:54:32 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 18:54:32 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 18:54:32 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 18:54:33 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 18:54:33 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 18:54:33 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 18:54:46 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 18:54:46 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:00:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:00:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:00:13 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:00:13 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:00:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 19:00:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 19:00:22 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:00:22 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:02:02 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Closing browser.
+2025-08-24 19:06:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:06:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:06:27 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:06:27 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:06:27 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 19:06:27 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 19:06:38 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:06:38 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:09:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:09:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:09:36 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:09:36 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:09:37 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 19:09:37 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 19:09:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:09:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:12:06 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Closing browser.
+2025-08-24 19:12:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:12:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:12:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:12:57 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:12:57 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 19:12:57 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 19:13:10 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:13:10 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:15:34 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Closing browser.
+2025-08-24 19:16:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:16:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:16:08 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:16:09 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:16:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 19:16:09 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 19:16:20 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:16:20 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:18:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:18:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Closing browser.
+2025-08-24 19:36:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:36:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:36:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:36:44 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:36:44 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-24 19:36:44 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-24 19:36:56 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:36:56 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:39:19 [main] ERROR com.iween.testcase.TCCP_1 - Test failed due to: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='flight-booking-page_flight-details'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60501}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60501/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27386069abd9db55f046d205737a8135
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.21.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.21.0.jar:?]
+	at com.iween.testcase.TCCP_1.myTest(TCCP_1.java:128) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-24 19:39:19 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-24 19:39:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:39:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:39:19 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:39:19 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:39:19 [main] INFO  com.iween.testcase.TCCP_2 - Operating System: Windows
+2025-08-24 19:39:19 [main] INFO  com.iween.testcase.TCCP_2 - Browser: chrome
+2025-08-24 19:39:36 [main] INFO  com.iween.testcase.TCCP_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:39:36 [main] INFO  com.iween.testcase.TCCP_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:39:39 [main] INFO  com.iween.testcase.TCCP_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:39:39 [main] INFO  com.iween.testcase.TCCP_2 - Closing browser.
+2025-08-24 19:39:39 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:39:39 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:39:39 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:39:39 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:39:39 [main] INFO  com.iween.testcase.TCCP_3 - Operating System: Windows
+2025-08-24 19:39:39 [main] INFO  com.iween.testcase.TCCP_3 - Browser: chrome
+2025-08-24 19:39:52 [main] INFO  com.iween.testcase.TCCP_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:39:52 [main] INFO  com.iween.testcase.TCCP_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:40:02 [main] INFO  com.iween.testcase.TCCP_3 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:40:02 [main] INFO  com.iween.testcase.TCCP_3 - Closing browser.
+2025-08-24 19:40:03 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:40:03 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:40:03 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:40:03 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:40:03 [main] INFO  com.iween.testcase.TCCP_4 - Operating System: Windows
+2025-08-24 19:40:03 [main] INFO  com.iween.testcase.TCCP_4 - Browser: chrome
+2025-08-24 19:40:15 [main] INFO  com.iween.testcase.TCCP_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:40:15 [main] INFO  com.iween.testcase.TCCP_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:40:30 [main] INFO  com.iween.testcase.TCCP_4 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:40:30 [main] INFO  com.iween.testcase.TCCP_4 - Closing browser.
+2025-08-24 19:40:31 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:40:31 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:40:31 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:40:31 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:40:31 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 19:40:31 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 19:40:44 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:40:44 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:41:50 [main] INFO  com.iween.testcase.TCCP_5 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:41:50 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 19:41:50 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 19:41:50 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 19:42:02 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:42:02 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:44:11 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 19:44:12 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 19:44:12 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 19:44:21 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:44:21 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:45:26 [main] INFO  com.iween.testcase.TCCP_5 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:45:26 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 19:45:27 [main] INFO  com.iween.testcase.TCCP_5 - Operating System: Windows
+2025-08-24 19:45:27 [main] INFO  com.iween.testcase.TCCP_5 - Browser: chrome
+2025-08-24 19:45:38 [main] INFO  com.iween.testcase.TCCP_5 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:45:38 [main] INFO  com.iween.testcase.TCCP_5 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:46:43 [main] INFO  com.iween.testcase.TCCP_5 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:46:43 [main] INFO  com.iween.testcase.TCCP_5 - Closing browser.
+2025-08-24 19:46:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:46:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:46:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:46:43 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:46:43 [main] INFO  com.iween.testcase.TCCP_7 - Operating System: Windows
+2025-08-24 19:46:43 [main] INFO  com.iween.testcase.TCCP_7 - Browser: chrome
+2025-08-24 19:46:57 [main] INFO  com.iween.testcase.TCCP_7 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:46:57 [main] INFO  com.iween.testcase.TCCP_7 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:47:49 [main] INFO  com.iween.testcase.TCCP_7 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:47:49 [main] INFO  com.iween.testcase.TCCP_7 - Closing browser.
+2025-08-24 19:47:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:47:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:47:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:47:50 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:47:50 [main] INFO  com.iween.testcase.TCCP_8 - Operating System: Windows
+2025-08-24 19:47:50 [main] INFO  com.iween.testcase.TCCP_8 - Browser: chrome
+2025-08-24 19:48:00 [main] INFO  com.iween.testcase.TCCP_8 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:48:00 [main] INFO  com.iween.testcase.TCCP_8 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:49:49 [main] INFO  com.iween.testcase.TCCP_8 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:49:49 [main] INFO  com.iween.testcase.TCCP_8 - Closing browser.
+2025-08-24 19:49:49 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:49:49 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:49:49 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:49:49 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:49:49 [main] INFO  com.iween.testcase.TCCP_9 - Operating System: Windows
+2025-08-24 19:49:49 [main] INFO  com.iween.testcase.TCCP_9 - Browser: chrome
+2025-08-24 19:50:39 [main] INFO  com.iween.testcase.TCCP_9 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:50:39 [main] INFO  com.iween.testcase.TCCP_9 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:53:00 [main] INFO  com.iween.testcase.TCCP_9 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:53:00 [main] INFO  com.iween.testcase.TCCP_9 - Closing browser.
+2025-08-24 19:53:00 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:53:00 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:53:00 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:53:00 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:53:00 [main] INFO  com.iween.testcase.TCCP_10 - Operating System: Windows
+2025-08-24 19:53:00 [main] INFO  com.iween.testcase.TCCP_10 - Browser: chrome
+2025-08-24 19:53:50 [main] INFO  com.iween.testcase.TCCP_10 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:53:50 [main] INFO  com.iween.testcase.TCCP_10 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:56:40 [main] INFO  com.iween.testcase.TCCP_10 - Closing browser.
+2025-08-24 19:56:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:56:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:56:40 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:56:40 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:56:40 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-24 19:56:40 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-24 19:56:50 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:56:50 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-24 19:59:32 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 19:59:32 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-24 19:59:32 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 19:59:32 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 19:59:32 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 19:59:32 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 19:59:32 [main] INFO  com.iween.testcase.TCCP_12 - Operating System: Windows
+2025-08-24 19:59:32 [main] INFO  com.iween.testcase.TCCP_12 - Browser: chrome
+2025-08-24 19:59:44 [main] INFO  com.iween.testcase.TCCP_12 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 19:59:44 [main] INFO  com.iween.testcase.TCCP_12 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:00:40 [main] INFO  com.iween.testcase.TCCP_12 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 20:00:40 [main] INFO  com.iween.testcase.TCCP_12 - Closing browser.
+2025-08-24 20:00:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 20:00:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 20:00:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 20:00:41 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 20:00:41 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 20:00:41 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 20:00:50 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:00:50 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:01:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 20:01:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 20:01:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 20:01:56 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 20:02:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:02:08 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:03:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 20:03:12 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 20:03:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 20:03:13 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 20:03:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:03:23 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:05:39 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 20:05:39 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Operating System: Windows
+2025-08-24 20:05:39 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser: chrome
+2025-08-24 20:05:49 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:05:49 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:08:05 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_2 - Closing browser.
+2025-08-24 20:08:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 20:08:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 20:08:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 20:08:06 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 20:08:06 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-24 20:08:06 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-24 20:08:17 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:08:17 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:10:43 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-24 20:10:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 20:10:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 20:10:44 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 20:10:44 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 20:10:44 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Operating System: Windows
+2025-08-24 20:10:44 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser: chrome
+2025-08-24 20:10:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:10:53 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:12:48 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 20:12:48 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_4 - Closing browser.
+2025-08-24 20:45:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 20:45:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 20:45:06 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 20:45:07 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 20:45:07 [main] INFO  com.iween.testcase.TCCP_10 - Operating System: Windows
+2025-08-24 20:45:07 [main] INFO  com.iween.testcase.TCCP_10 - Browser: chrome
+2025-08-24 20:45:14 [main] INFO  com.iween.testcase.TCCP_10 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:45:14 [main] INFO  com.iween.testcase.TCCP_10 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:48:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 20:48:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 20:48:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 20:48:48 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 20:48:48 [main] INFO  com.iween.testcase.TCCP_10 - Operating System: Windows
+2025-08-24 20:48:48 [main] INFO  com.iween.testcase.TCCP_10 - Browser: chrome
+2025-08-24 20:48:52 [main] INFO  com.iween.testcase.TCCP_10 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:48:52 [main] INFO  com.iween.testcase.TCCP_10 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:51:16 [main] INFO  com.iween.testcase.TCCP_10 - Closing browser.
+2025-08-24 20:56:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 20:56:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 20:56:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 20:56:51 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 20:56:51 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-24 20:56:51 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-24 20:56:56 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 20:56:56 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-24 20:59:36 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 20:59:36 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-24 21:02:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 21:02:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 21:02:55 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 21:02:55 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 21:02:55 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-24 21:02:55 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-24 21:03:02 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 21:03:02 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-24 21:04:52 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 21:04:52 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-24 21:07:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 21:07:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 21:07:12 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 21:07:12 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 21:07:12 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-24 21:07:12 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-24 21:07:18 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 21:07:18 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-24 21:09:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 21:09:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 21:09:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 21:09:50 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 21:09:50 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-24 21:09:50 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-24 21:09:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 21:09:59 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-24 21:11:49 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 21:11:49 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-24 21:12:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 21:12:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 21:12:07 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 21:12:08 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 21:12:08 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-24 21:12:08 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-24 21:12:15 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 21:12:15 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-24 21:14:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-24 21:14:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-24 21:14:47 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-24 21:14:47 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-24 21:14:47 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-24 21:14:47 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-24 21:14:53 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-24 21:14:53 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-24 21:17:45 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-24 21:17:45 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 10:51:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 10:51:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 10:51:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 10:51:33 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 10:51:33 [main] INFO  com.iween.testcase.TCCP_1 - Operating System: Windows
+2025-08-25 10:51:33 [main] INFO  com.iween.testcase.TCCP_1 - Browser: chrome
+2025-08-25 10:51:37 [main] INFO  com.iween.testcase.TCCP_1 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 10:51:37 [main] INFO  com.iween.testcase.TCCP_1 - ******** Starting TestCase1: testLogin ********
+2025-08-25 10:53:19 [main] INFO  com.iween.testcase.TCCP_1 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 10:53:20 [main] INFO  com.iween.testcase.TCCP_1 - Closing browser.
+2025-08-25 10:54:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 10:54:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 10:54:43 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 10:54:43 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 10:54:43 [main] INFO  com.iween.testcase.TCCP_2 - Operating System: Windows
+2025-08-25 10:54:43 [main] INFO  com.iween.testcase.TCCP_2 - Browser: chrome
+2025-08-25 10:54:47 [main] INFO  com.iween.testcase.TCCP_2 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 10:54:47 [main] INFO  com.iween.testcase.TCCP_2 - ******** Starting TestCase1: testLogin ********
+2025-08-25 10:54:50 [main] INFO  com.iween.testcase.TCCP_2 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 10:54:50 [main] INFO  com.iween.testcase.TCCP_2 - Closing browser.
+2025-08-25 10:56:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 10:56:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 10:56:33 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 10:56:33 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 10:56:34 [main] INFO  com.iween.testcase.TCCP_3 - Operating System: Windows
+2025-08-25 10:56:34 [main] INFO  com.iween.testcase.TCCP_3 - Browser: chrome
+2025-08-25 10:56:36 [main] INFO  com.iween.testcase.TCCP_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 10:56:37 [main] INFO  com.iween.testcase.TCCP_3 - ******** Starting TestCase1: testLogin ********
+2025-08-25 10:56:45 [main] INFO  com.iween.testcase.TCCP_3 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 10:56:45 [main] INFO  com.iween.testcase.TCCP_3 - Closing browser.
+2025-08-25 11:01:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 11:01:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 11:01:57 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 11:01:57 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 11:01:57 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 11:01:57 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 11:02:23 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 11:02:23 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 11:05:24 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 11:05:24 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 11:10:09 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 11:10:09 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 11:10:09 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 11:10:09 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 11:10:09 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 11:10:09 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 11:10:12 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 11:10:12 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 11:13:05 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 11:13:05 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 11:14:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 11:14:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 11:14:30 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 11:14:30 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 11:14:30 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Operating System: Windows
+2025-08-25 11:14:30 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser: chrome
+2025-08-25 11:14:33 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 11:14:33 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - ******** Starting TestCase1: testLogin ********
+2025-08-25 11:16:34 [main] INFO  com.iween.testcaseRoundTrip.TCCPR_3 - Closing browser.
+2025-08-25 16:11:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 16:11:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 16:11:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet11.xml.rels
+2025-08-25 16:11:41 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 16:11:42 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 16:11:42 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 16:11:42 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:11:42 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:11:48 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:11:48 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:11:48 [main] ERROR com.iween.testcase.TCCP_11 - Test failed due to: 
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:672) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
+	at com.iween.testcase.TCCP_11.myTest(TCCP_11.java:57) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-25 16:11:49 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:11:49 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:11:49 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:11:51 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:11:51 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:11:51 [main] ERROR com.iween.testcase.TCCP_11 - Test failed due to: 
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:672) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
+	at com.iween.testcase.TCCP_11.myTest(TCCP_11.java:57) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-25 16:11:51 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:11:52 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:11:52 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:11:54 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:11:54 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:11:54 [main] ERROR com.iween.testcase.TCCP_11 - Test failed due to: 
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:672) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
+	at com.iween.testcase.TCCP_11.myTest(TCCP_11.java:57) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-25 16:11:54 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:11:55 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:11:55 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:11:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:11:59 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:11:59 [main] ERROR com.iween.testcase.TCCP_11 - Test failed due to: 
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:672) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
+	at com.iween.testcase.TCCP_11.myTest(TCCP_11.java:57) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-25 16:11:59 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:11:59 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:11:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:12:01 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:12:01 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:12:01 [main] ERROR com.iween.testcase.TCCP_11 - Test failed due to: 
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:672) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
+	at com.iween.testcase.TCCP_11.myTest(TCCP_11.java:57) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-25 16:12:01 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:12:01 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:12:01 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:12:04 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:12:04 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:12:04 [main] ERROR com.iween.testcase.TCCP_11 - Test failed due to: 
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:672) ~[?:?]
+	at java.base/java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
+	at com.iween.testcase.TCCP_11.myTest(TCCP_11.java:57) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2025-08-25 16:12:04 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:12:05 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:12:05 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:14:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 16:14:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 16:14:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet11.xml.rels
+2025-08-25 16:14:50 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 16:14:51 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 16:14:51 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 16:14:51 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:14:51 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:14:55 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:14:55 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:17:34 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:17:34 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:17:34 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:17:36 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:17:36 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:20:28 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 16:20:28 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 16:20:28 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet11.xml.rels
+2025-08-25 16:20:28 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 16:20:28 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 16:20:28 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 16:20:28 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:20:28 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:20:31 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:20:31 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:23:05 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:23:06 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:23:06 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:23:08 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:23:08 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:25:10 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:25:10 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:25:10 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:25:12 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:25:12 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:27:17 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:27:17 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:27:17 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:27:23 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:27:23 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:29:28 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:29:28 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:29:28 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:29:30 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:29:30 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:31:16 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:31:16 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:31:16 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:31:16 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:31:18 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:31:18 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:32:57 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:32:57 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:32:57 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:32:57 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:32:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:32:59 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:34:59 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:34:59 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:34:59 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:34:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:35:01 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:35:01 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:35:54 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:35:54 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:35:55 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:35:55 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:35:57 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:35:57 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:37:12 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:37:12 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:37:12 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:37:12 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:37:14 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:37:14 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:38:05 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:38:05 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:38:05 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:38:05 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:38:07 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:38:07 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:39:21 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:39:21 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:39:21 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:39:21 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:39:23 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:39:23 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:41:20 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:41:20 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:41:20 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:41:20 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:41:22 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:41:22 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:43:12 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:43:12 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:43:12 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:43:12 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:43:14 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:43:14 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:44:29 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:44:29 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:44:30 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:44:30 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:44:32 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:44:32 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:46:15 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:46:15 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:46:16 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:46:16 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:46:18 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:46:18 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:47:32 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:47:32 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:47:32 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:47:34 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:47:34 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:48:46 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:48:46 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:48:46 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:48:48 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:48:48 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:50:57 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:50:59 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:50:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:51:08 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:51:08 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:52:14 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:52:14 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:52:14 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:52:16 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:52:16 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:53:43 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:53:44 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:53:44 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:53:46 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:53:46 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:55:41 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:55:41 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:55:41 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:55:41 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:55:43 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:55:43 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:57:10 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:57:10 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:57:10 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:57:12 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:57:12 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 16:58:57 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 16:58:57 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 16:58:57 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 16:58:57 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 16:58:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 16:58:59 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:00:36 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:00:36 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:00:37 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:00:37 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:00:39 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:00:39 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:03:59 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:03:59 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:03:59 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:03:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:04:02 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:04:02 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:06:51 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:06:51 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:06:52 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:06:52 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:06:54 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:06:54 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:08:38 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:08:38 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:33:18 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 17:33:18 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 17:33:18 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet11.xml.rels
+2025-08-25 17:33:18 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 17:33:18 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 17:33:18 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 17:33:18 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:33:18 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:34:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-25 17:34:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet5.xml.rels
+2025-08-25 17:34:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet11.xml.rels
+2025-08-25 17:34:04 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-08-25 17:34:04 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 17:34:04 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-08-25 17:34:05 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:34:05 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:34:08 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:34:08 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:35:30 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:35:30 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:35:30 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:35:30 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:35:32 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:35:32 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:37:21 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:37:21 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:37:22 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:37:22 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:37:24 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:37:24 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:39:28 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:39:29 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:39:29 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:39:31 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:39:31 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:41:36 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:41:36 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:41:36 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:41:38 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:41:38 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:46:28 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:46:28 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:46:29 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:46:29 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:46:31 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:46:31 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:50:14 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:50:14 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:50:15 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:50:15 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:50:17 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:50:17 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:56:00 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:56:00 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:56:00 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:56:00 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:56:02 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:56:02 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:56:55 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:56:55 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:56:56 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:56:56 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:57:00 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:57:00 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:58:23 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:58:23 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:58:23 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:58:23 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:58:27 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:58:27 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 17:59:20 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 17:59:20 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 17:59:21 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 17:59:21 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 17:59:26 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 17:59:26 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:00:44 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:00:44 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:00:44 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:00:44 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:00:48 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:00:48 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:06:31 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:06:31 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:06:32 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:06:32 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:06:37 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:06:37 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:09:07 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:09:07 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:09:07 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:09:09 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:09:09 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:10:27 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:10:27 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:10:28 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:10:28 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:10:30 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:10:30 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:12:36 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:12:36 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:12:36 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:12:36 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:12:39 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:12:39 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:15:35 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:15:35 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:15:35 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:15:37 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:15:37 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:16:50 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:16:50 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:16:50 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:16:52 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:16:52 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:19:02 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:19:02 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:19:02 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:19:04 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:19:04 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:22:34 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:22:34 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:22:34 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:22:36 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:22:36 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:24:05 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:24:05 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:24:05 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:24:07 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:24:07 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:29:26 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:29:26 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:29:26 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:29:26 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:29:28 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:29:28 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:30:56 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:30:56 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:30:56 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:30:59 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:30:59 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:33:47 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:33:47 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:33:47 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:33:47 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:33:50 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:33:50 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:36:29 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:36:29 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:36:30 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:36:30 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:36:41 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:36:41 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:41:18 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:41:18 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:41:19 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:41:19 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:41:21 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:41:21 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:45:58 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:45:58 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.
+2025-08-25 18:45:58 [main] INFO  com.iween.testcase.TCCP_11 - Operating System: Windows
+2025-08-25 18:45:58 [main] INFO  com.iween.testcase.TCCP_11 - Browser: chrome
+2025-08-25 18:46:00 [main] INFO  com.iween.testcase.TCCP_11 - Browser launched and navigated to URL: https://uaev2.skytravellers.com/login
+2025-08-25 18:46:00 [main] INFO  com.iween.testcase.TCCP_11 - ******** Starting TestCase1: testLogin ********
+2025-08-25 18:47:37 [main] INFO  com.iween.testcase.TCCP_11 - ******** TestCase1: testLogin completed successfully ********
+2025-08-25 18:47:37 [main] INFO  com.iween.testcase.TCCP_11 - Closing browser.

@@ -1,5 +1,6 @@
 package com.skytraveller.pageObjects;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,8 +9,11 @@ import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -21,6 +25,7 @@ public class FlightDetails extends BasePage  {
 		super(driver);// calls BasePage constructor
 	}
 	
+	/*
 	public void validateFlightDetailsBasedOnFlightCard(String[] userEnteredData,ExtentTest test) {
 	    try {
 	        String onWardLocation = userEnteredData[0];          // e.g., BLR
@@ -67,6 +72,92 @@ public class FlightDetails extends BasePage  {
 	        Assert.fail();
 	        
 	    }
+	}
+*/
+	public void validateFlightDetailsBasedOnFlightCard(String[] userEnteredData, ExtentTest test) {
+	    try {
+	        String onWardLocation = userEnteredData[0];          // e.g., BLR
+	        String returnLocation = userEnteredData[1];          // e.g., HAM
+	        String userEnteredDate = userEnteredData[2];         // e.g., 20 Aug, 2025
+	        String travelClass = userEnteredData[userEnteredData.length - 1]; // ECONOMY, BUSINESS, FIRST
+
+	        // === 1. Extract airport codes from sector-span ===
+	        String sectorText = driver.findElement(By.xpath("//*[@class='sector-span']")).getText(); // e.g., Bengaluru(BLR) -> Hamburg(HAM)
+	        String[] airportCodes = sectorText.split("\\(");
+	        String fromCode = airportCodes[1].split("\\)")[0].trim(); // BLR
+	        String toCode = airportCodes[2].split("\\)")[0].trim();   // HAM
+
+	        // === 2. Extract and format travel date ===
+	        String dateText = driver.findElement(By.xpath("//*[@class='date-span']")).getText(); // e.g., One Way Wed, 20 Aug, 2025
+	        String[] parts = dateText.split(",");
+	        String formattedDate = parts[1].trim() + ", " + parts[2].trim(); // e.g., 20 Aug, 2025
+
+	        // === 3. Extract travel class ===
+	        List<WebElement> classElements = driver.findElements(By.xpath("//*[@class='d-flex gap-sm-2 flex-sm-row flex-column flex-wrap gap-1']/span"));
+	        String flightTravelClass = "";
+	        for (WebElement el : classElements) {
+	            String text = el.getText().trim();
+	            if (text.equalsIgnoreCase("ECONOMY") || text.equalsIgnoreCase("BUSINESS") || text.equalsIgnoreCase("FIRST")) {
+	                flightTravelClass = text;
+	                break;
+	            }
+	        }
+
+	        if (flightTravelClass.isEmpty()) {
+	            test.log(Status.FAIL, "Travel class not found on flight card.");
+	            Assert.fail();
+	            return;
+	        }
+
+	        // === 4. Compare values and store in table ===
+	        List<String[]> table = new ArrayList<>();
+	        boolean allMatch = true;
+
+	        allMatch &= addComparisonRow(table, "From Location", fromCode, onWardLocation);
+	        allMatch &= addComparisonRow(table, "To Location", toCode, returnLocation);
+	        allMatch &= addComparisonRow(table, "Travel Date", formattedDate, userEnteredDate);
+	        allMatch &= addComparisonRow(table, "Travel Class", flightTravelClass, travelClass);
+
+	        // === 5. Generate HTML table for ExtentReports ===
+	        StringBuilder html = new StringBuilder();
+	        html.append("<table border='1' style='border-collapse: collapse; font-family: monospace;'>")
+	            .append("<tr style='background-color:#f2f2f2;'><th>Field</th><th>Card Value</th><th>Expected Value</th><th>Status</th></tr>");
+
+	        for (String[] row : table) {
+	            String bgColor = row[3].equals("PASS") ? "#d4edda" : "#f8d7da";
+	            html.append("<tr style='background-color:").append(bgColor).append(";'>");
+	            for (String col : row) {
+	                html.append("<td style='padding: 6px;'>").append(col).append("</td>");
+	            }
+	            html.append("</tr>");
+	        }
+	        html.append("</table>");
+
+	        // === 6. Final Log ===
+	        if (allMatch) {
+	            test.log(Status.PASS, "Flight details matched successfully.");
+	        } else {
+	            test.log(Status.FAIL, "Mismatch found in one or more flight details.");
+	            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Flight Detail Mismatch", "Mismatch in flight card details");
+	        }
+
+	        test.log(Status.INFO, html.toString());
+
+	        if (!allMatch) Assert.fail();
+
+	    } catch (Exception e) {
+	        test.log(Status.FAIL, "Exception while validating flight details: " + e.getMessage());
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Exception", "Error during validation");
+	        Assert.fail();
+	    }
+	}
+
+	// === Helper Method ===
+	private boolean addComparisonRow(List<String[]> table, String field, String actual, String expected) {
+	    boolean match = actual.trim().equalsIgnoreCase(expected.trim());
+	    String status = match ? "PASS" : "FAIL";
+	    table.add(new String[]{field, actual, expected, status});
+	    return match;
 	}
 
 
@@ -602,6 +693,7 @@ public class FlightDetails extends BasePage  {
 	}
 
 	*/
+	/*
 	private boolean logCompare(String label, String expected, String actual, StringBuilder log) {
 	    boolean match;
 
@@ -649,6 +741,211 @@ public class FlightDetails extends BasePage  {
 	       .append("</td></tr>");
 
 	    return !match;
+	}
+	*/
+	private boolean logCompare(String label, String expected, String actual, StringBuilder log) {
+	    boolean match;
+
+	    switch (label.toLowerCase()) {
+	        case "airline":
+	        case "flight equipment":
+	        case "operated by":
+	            // Use contains for both Airline and Operated By
+	            match = actual.toLowerCase().contains(expected.toLowerCase());
+	            break;
+
+	        case "check-in":
+	        case "cabbin":
+	            List<String> actualWeights = Arrays.stream(actual.split(","))
+	                .map(val -> val.replaceAll("[^0-9]", "").trim())
+	                .filter(val -> !val.isEmpty())
+	                .collect(Collectors.toList());
+
+	            String expectedWeight = expected.replaceAll("[^0-9]", "").trim();
+
+	            match = actualWeights.stream()
+	                .allMatch(w -> w.equals(expectedWeight));
+	            break;
+
+	        case "fare type":
+	            String[] fareTypes = actual.split(",");
+	            match = Arrays.stream(fareTypes)
+	                .allMatch(f -> f.trim().equalsIgnoreCase(expected.trim()));
+	            break;
+
+	        default:
+	            match = expected.trim().equalsIgnoreCase(actual.trim());
+	            break;
+	    }
+
+	    log.append("<tr>")
+	       .append("<td>").append(label).append("</td>")
+	       .append("<td>").append(expected).append("</td>")
+	       .append("<td>").append(actual).append("</td>")
+	       .append("<td style='color:").append(match ? "green" : "red").append(";'>")
+	       .append(match ? "PASS" : "FAIL")
+	       .append("</td></tr>");
+
+	    return !match;
+	}
+
+	
+	
+	public String getAllFlightDetails() {
+	    String allText = "";
+
+	    try {
+	        WebElement flightSection = driver.findElement(By.xpath("//section[@class='selected-flight-details']"));
+	        allText = flightSection.getText();
+	        System.out.println("🛫 All Flight Details:\n" + allText);
+	    } catch (NoSuchElementException e) {
+	        System.out.println("❌ Flight details section not found.");
+	    } catch (Exception e) {
+	        System.out.println("❌ Unexpected error while fetching flight details: " + e.getMessage());
+	    }
+
+	    return allText;
+	}
+
+	
+	
+	
+	
+	public void fareBreakUp(String farePrice, ExtentTest test) {
+	    double totalCalculated = 0.0;
+	    StringBuilder fareLog = new StringBuilder();
+
+	    totalCalculated += getFareSectionTotal("Adult", fareLog);
+	    totalCalculated += getFareSectionTotal("Child", fareLog);
+	    totalCalculated += getFareSectionTotal("Infant", fareLog);
+
+	    // Clean and parse input fare price
+	    double passedFare = parseAmount(farePrice);
+
+	    fareLog.append("<br><b>🧮 Total Calculated:</b> AED ").append(totalCalculated)
+	           .append("<br><b>💵 Fare Passed for Validation:</b> ").append(farePrice);
+
+	    if (Math.abs(totalCalculated - passedFare) < 0.01) {
+	        test.log(Status.PASS, "✅ Fare matched successfully.<br>" + fareLog.toString());
+	    } else {
+	        test.log(Status.FAIL, "❌ Fare mismatch!<br>" + fareLog.toString() +
+	                 "<br><b>Difference:</b> AED " + Math.abs(totalCalculated - passedFare));
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Fare Mismatch", "Mismatch in fare breakdown and passed fare.");
+	        Assert.fail("Fare mismatch detected.");
+	    }
+	}
+	private double getFareSectionTotal(String sectionName, StringBuilder fareLog) {
+	    double total = 0.0;
+
+	    try {
+	        String baseFareXpath = "//div[contains(text(),'" + sectionName + "')]/following-sibling::div//span[contains(text(),'Base Fare')]/following-sibling::span";
+	        String yqFareXpath = "//div[contains(text(),'" + sectionName + "')]/following-sibling::div//span[contains(text(),'YQ')]/following-sibling::span";
+	        String otherTaxXpath = "//div[contains(text(),'" + sectionName + "')]/following-sibling::div//span[contains(text(),'Other Tax')]/following-sibling::span";
+
+	        WebElement baseFareElem = driver.findElement(By.xpath(baseFareXpath));
+	        WebElement yqFareElem = driver.findElement(By.xpath(yqFareXpath));
+	        WebElement otherTaxElem = driver.findElement(By.xpath(otherTaxXpath));
+
+	        double baseFare = parseAmount(baseFareElem.getText());
+	        double yqFare = parseAmount(yqFareElem.getText());
+	        double otherTax = parseAmount(otherTaxElem.getText());
+
+	        total = baseFare + yqFare + otherTax;
+
+	        fareLog.append("<br><b>").append(sectionName).append(" Fare Breakdown:</b>")
+	               .append("<br>Base Fare: AED ").append(baseFare)
+	               .append("<br>YQ: AED ").append(yqFare)
+	               .append("<br>Other Tax: AED ").append(otherTax)
+	               .append("<br><b>Total: AED ").append(total).append("</b><br>");
+	    } catch (NoSuchElementException e) {
+	        fareLog.append("<br><b>⚠️ No fare section found for: ").append(sectionName).append("</b><br>");
+	    }
+
+	    return total;
+	}
+	private double parseAmount(String amountText) {
+	    String cleaned = amountText.replaceAll("[^0-9.]", "").replace(",", "");
+	    try {
+	        return Double.parseDouble(cleaned);
+	    } catch (NumberFormatException e) {
+	        System.out.println("❌ Could not parse amount: " + amountText);
+	        return 0.0;
+	    }
+	}
+
+	
+	public void clickOnFareSummary( ExtentTest test) {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	        WebElement fareSummaryButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Fare Summary']")));
+	        fareSummaryButton.click();
+	        test.log(Status.PASS, "✅ Clicked on 'Fare Summary' button successfully.");
+	    } catch (TimeoutException e) {
+	        test.log(Status.FAIL, "❌ 'Fare Summary' button was not clickable within timeout.");
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Fare Summary Click Failure", "Button not clickable or not found.");
+	        Assert.fail("Failed to click on 'Fare Summary' button.");
+	    } catch (Exception e) {
+	        test.log(Status.FAIL, "❌ Unexpected error clicking 'Fare Summary': " + e.getMessage());
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Unexpected Click Error", e.getMessage());
+	        Assert.fail("Unexpected error during Fare Summary click.");
+	    }
+	}
+
+	public void clickOnFareRule( ExtentTest test) {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement fareSummaryButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Fare Rules']")));
+	        fareSummaryButton.click();
+	        test.log(Status.PASS, "✅ Clicked on 'Fare Rules' button successfully.");
+	    } catch (TimeoutException e) {
+	        test.log(Status.FAIL, "❌ 'Fare  Rules' button was not clickable within timeout.");
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Fare Summary Click Failure", "Button not clickable or not found.");
+	        Assert.fail("Failed to click on 'Fare Rules' button.");
+	    } catch (Exception e) {
+	        test.log(Status.FAIL, "❌ Unexpected error clicking 'Fare Rules': " + e.getMessage());
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Unexpected Click Error", e.getMessage());
+	        Assert.fail("Unexpected error during Fare Rules click.");
+	    }
+	}
+	
+	public void validateFareRules(ExtentTest test) {
+	    try {
+	        WebElement fareRules = driver.findElement(By.xpath("//div[@class='fare-rules-tabel']"));
+
+	        if (fareRules.isDisplayed()) {
+	            test.log(Status.PASS, "✅ Fare Rules section is displayed.");
+	        } else {
+	            test.log(Status.FAIL, "❌ Fare Rules section is present but not visible.");
+	            ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Fare Rules Not Visible", "Fare Rules div is not visible.");
+	            Assert.fail("Fare Rules section is not visible.");
+	        }
+
+	    } catch (NoSuchElementException e) {
+	        test.log(Status.FAIL, "❌ Fare Rules section not found on the page.");
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Fare Rules Missing", "Fare Rules div not present in DOM.");
+	        Assert.fail("Fare Rules element is missing.");
+	    } catch (Exception e) {
+	        test.log(Status.FAIL, "❌ Unexpected error while validating Fare Rules: " + e.getMessage());
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Fare Rules Error", e.getMessage());
+	        Assert.fail("Unexpected exception while checking Fare Rules.");
+	    }
+	}
+
+	public void clickOnMiniFareRule( ExtentTest test) {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement fareSummaryButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Mini Fare Rules']")));
+	        fareSummaryButton.click();
+	        test.log(Status.PASS, "✅ Clicked on 'Mini Fare Rules' button successfully.");
+	    } catch (TimeoutException e) {
+	        test.log(Status.FAIL, "❌ 'Mini Fare Rules' button was not clickable within timeout.");
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Fare Summary Click Failure", "Button not clickable or not found.");
+	        Assert.fail("Failed to click on 'Fare Summary' button.");
+	    } catch (Exception e) {
+	        test.log(Status.FAIL, "❌ Unexpected error clicking 'Mini Fare Rules': " + e.getMessage());
+	        ScreenshotUtil.captureAndAttachScreenshot1(driver, test, Status.FAIL, "Unexpected Click Error", e.getMessage());
+	        Assert.fail("Unexpected error during Mini Fare Rules click.");
+	    }
 	}
 
 	

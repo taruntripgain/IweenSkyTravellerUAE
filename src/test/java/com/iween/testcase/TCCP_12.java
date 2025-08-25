@@ -56,8 +56,14 @@ public class TCCP_12 extends baseClass {
     		
     		  int FlightCardBasedOnIndex = Integer.parseInt(excelTestData.get("FlightCardBasedOnIndex"));
     		 
-    		 
+    		  String rawAirlineData = excelTestData.get("airLine"); 
+     		 List<String> AirLine = Arrays.asList(rawAirlineData.split("\\s*,\\s*")); 
     		
+     		test.log(Status.INFO, "Depart From: " + departFrom +",Going To: "+ goingTo+",Selected Class: "+Class);
+	        test.log(Status.INFO, "AdultsCounts: " + adultsCounts + ", ChildrenCount: " + childCount + ", InfantsCount: " + infantsCount);
+      		 
+     		 
+     		 
     		 //Method To Get Future Date
             Map<String, Iween_FutureDates.DateResult> dateResults = futureDates.furtherDate();
     		Iween_FutureDates.DateResult date4 = dateResults.get("datePlus4");
@@ -166,58 +172,13 @@ public class TCCP_12 extends baseClass {
            } else {
                System.out.println("❌ Supplier not found in any flight card.");
            }
-*/
-           List<Map<String, String>> result = resultPage.checkSupplierAndDuplicateWithReport(driver, test, "amadeus");
+*/ 
+           Thread.sleep(3000);
+          
 
-           if (result != null && !result.isEmpty()) {
-               Map<String, String> firstMatch = result.get(0);  // get first matching fare details if u put get(1) next farecard details in will return  result card index also it will return
-               int index = Integer.parseInt(firstMatch.get("flightIndex"));  // Get flightIndex from the map
-              
-               // Optionally print all details from firstMatch
-               System.out.println("Flight Index: " + firstMatch.get("flightIndex"));
-               System.out.println("Fare Index: " + firstMatch.get("fareIndex"));
-               System.out.println("Supplier: " + firstMatch.get("supplier"));
-               System.out.println("Fare Type: " + firstMatch.get("fareType"));
-               System.out.println("Price: AED " + firstMatch.get("price"));
-               System.out.println("Checkin: " + firstMatch.get("checkin"));
-               System.out.println("Cabin: " + firstMatch.get("cabin"));
-               System.out.println("Refundable: " + firstMatch.get("refundable"));
-               System.out.println("Fare Class: " + firstMatch.get("fareClass"));
-               
-               String checkin=firstMatch.get("checkin");
-               String cabin=firstMatch.get("cabin");
-               String fareType=firstMatch.get("fareType");
-               String fareClass=firstMatch.get("fareClass");
-               
-               List<String> fareTypeDetails = Arrays.asList(
-            		   checkin,cabin,fareType,fareClass
-     				 
-     		  );
-               
-               Map<String, String> flightcardDetails = resultPage.getFlightCardDetails(index);  // Use it wherever needed
-               System.out.println(flightcardDetails.size());
-               for (Map.Entry<String, String> entry : flightcardDetails.entrySet()) {
-                   System.out.println(entry.getKey() + " : " + entry.getValue());
-               }
-               
-               Thread.sleep(2000);
-               resultPage.clickOnFlightDetails(index,test);
-               Thread.sleep(2000);
-               
-            
-               flightDetails.validateFlightDetailsBasedOnFlightCard(userDetails, test);
-               
-               String[] GetFlightDetails  = flightDetails.getFlightDetails();
-              flightDetails.validateFlightCardAndFlightDetails(flightcardDetails,GetFlightDetails, fareTypeDetails,test,driver);
-               
-               
-
-           } else {
-               System.out.println("❌ Supplier not found in any flight card.");
-           }
-
-           
-           
+           List<String> selectAirlineReturn = resultPage.selectAirline(AirLine,test);
+           resultPage.validateAirlineFilter(selectAirlineReturn,test);
+          
            
    //this case to check 
    		
@@ -229,6 +190,7 @@ public class TCCP_12 extends baseClass {
             throw e;  // Re-throw to ensure Retry works properly
         }
     }
+    
     
     
     
